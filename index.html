@@ -1,86 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Item Database</title>
-    <style>
-        .item-card { border: 1px solid #ddd; padding: 10px; margin: 10px; width: 300px; }
-        .item-card img { max-width: 50px; vertical-align: middle; }
-    </style>
-</head>
-<body>
-    <div>
-        <label for="characterFilter">Filter by Character:</label>
-        <select id="characterFilter">
-            <option value="">All</option>
-            <option value="Warrior">Warrior</option>
-            <option value="Paladin">Paladin</option>
-            <option value="All">All</option>
-        </select>
-        <button onclick="filterItems()">Filter</button>
-    </div>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Item Database</title>
+        <style>
+            .item-card { border: 1px solid #ddd; padding: 10px; margin: 10px; width: 300px; }
+            .item-card img { max-width: 50px; vertical-align: middle; }
+        </style>
+    </head>
 
-    <div id="itemsContainer"></div>
+    <body>
+        <div>
+            <label for="characterFilter">Filter by Character:</label>
+            <select id="characterFilter">
+                <option value="all">All</option>
+                <option value="Badtz-maru">Badtz-maru</option>
+                <!-- Add more character options here -->
+            </select>
+            <button onclick="filterItems()">Filter</button>
+        </div>
 
-    <script>
-        let termImages = {};
+        <div id="itemsContainer"></div>
 
-        // Load term-image mappings from JSON
-        async function loadTermImages() {
-            termImages = await fetch('terms.json').then(res => res.json());
-        }
+        <script>
+            let termImages = {};
 
-        // Function to replace terms with images in any text
-        function replaceTermsWithImages(text) {
-            for (const term in termImages) {
-                const imageTag = `<img src="${termImages[term]}" alt="${term}" style="width: 20px; vertical-align: middle;">`;
-                const regex = new RegExp(`\\b${term}\\b`, "gi"); // Match whole words, case-insensitive
-                text = text.replace(regex, imageTag + " " + term);
+            // Load term-image mappings from JSON
+            async function loadTermImages() {
+                termImages = await fetch('terms.json').then(res => res.json());
             }
-            return text;
-        }
 
-        // Update displayed items with term images
-        function displayItems(items) {
-            const container = document.getElementById("itemsContainer");
-            container.innerHTML = "";
+            // Function to replace terms with images in any text
+            function replaceTermsWithImages(text) {
+                for (const term in termImages) {
+                    const imageTag = `<img src="${termImages[term]}" alt="${term}" style="width: 20px; vertical-align: middle;">`;
+                    const regex = new RegExp(`\\b${term}\\b`, "gi"); // Match whole words, case-insensitive
+                    text = text.replace(regex, imageTag + " " + term);
+                }
+                return text;
+            }
 
-            items.forEach(item => {
-                let characterImages = Array.isArray(item.images.character) 
-                    ? item.images.character.map(img => `<img src="${img}" alt="Character">`).join(' ') 
-                    : `<img src="${item.images.character}" alt="Character">`;
+            // Update displayed items with term images
+            function displayItems(items) {
+                const container = document.getElementById("itemsContainer");
+                container.innerHTML = "";
 
-                let sourceTextParts = item.source.split(" + "); 
-                let sourceImages = Array.isArray(item.images.source) 
-                    ? sourceTextParts.map((text, index) => 
-                        (item.images.source[index] ? `<img src="${item.images.source[index]}" alt="Source"> ` : "") + replaceTermsWithImages(text)
-                    ).join(" + ") 
-                    : `<img src="${item.images.source}" alt="Source"> ${replaceTermsWithImages(item.source)}`;
+                items.forEach(item => {
+                    // Check if images exist before using them
+                    let characterImages = item.images && item.images.character
+                        ? (Array.isArray(item.images.character) 
+                            ? item.images.character.map(img => `<img src="${img}" alt="Character">`).join(' ') 
+                            : `<img src="${item.images.character}" alt="Character">`)
+                        : "No character image"; // Fallback if missing
 
-                container.innerHTML += `
-                    <div class="item-card">
-                        <h3><img src="${item.images.item}" alt="${item.item}"> ${replaceTermsWithImages(item.item)}</h3>
-                        <p><strong>Character:</strong> ${characterImages}</p>
-                        <p><strong>Value:</strong> ${item.value}</p>
-                        <p><strong>Hearts:</strong> ${item.hearts}</p>
-                        <p><strong>Source:</strong> ${sourceImages}</p>
-                        <p><strong>Requirements:</strong> ${replaceTermsWithImages(item.requirements)}</p>
-                        <p><strong>Comments:</strong> ${replaceTermsWithImages(item.comments)}</p>
-                    </div>
-                `;
-            });
-        }
+                    let sourceTextParts = item.source.split(" + "); 
+                    let sourceImages = item.images && item.images.source
+                        ? (Array.isArray(item.images.source) 
+                            ? sourceTextParts.map((text, index) => 
+                                (item.images.source[index] ? `<img src="${item.images.source[index]}" alt="Source"> ` : "") + replaceTermsWithImages(text)
+                            ).join(" + ") 
+                            : `<img src="${item.images.source}" alt="Source"> ${replaceTermsWithImages(item.source)}`)
+                        : replaceTermsWithImages(item.source); // Fallback if missing
 
-        // Load term images first, then load database
-        async function loadDatabase() {
-            await loadTermImages();
-            database = await fetch('data.json').then(res => res.json());
-            displayItems(database);
-        }
+                    container.innerHTML += `
+                        <div class="item-card">
+                            <h3>${item.images && item.images.item ? `<img src="${item.images.item}" alt="${item.item}">` : ""} ${replaceTermsWithImages(item.item)}</h3>
+                            <p><strong>Character:</strong> ${characterImages}</p>
+                            <p><strong>Value:</strong> ${item.value}</p>
+                            <p><strong>Hearts:</strong> ${item.hearts}</p>
+                            <p><strong>Source:</strong> ${sourceImages}</p>
+                            <p><strong>Requirements:</strong> ${replaceTermsWithImages(item.requirements)}</p>
+                            <p><strong>Comments:</strong> ${replaceTermsWithImages(item.comments)}</p>
+                        </div>
+                    `;
+                });
+            }
 
-        loadDatabase();
+            // Function to filter items based on character selection
+            function filterItems() {
+                let selectedCharacter = document.getElementById("characterFilter").value;
 
-    </script>
-</body>
+                if (!database.length) {
+                    console.error("Database is not loaded yet!");
+                    return;
+                }
+
+                let filteredItems = selectedCharacter === "all"
+                    ? database
+                    : database.filter(item => item.character.includes(selectedCharacter));
+
+                displayItems(filteredItems);
+            }
+
+            // Load term images first, then load database
+            async function loadDatabase() {
+                await loadTermImages();
+                database = await fetch('data.json').then(res => res.json());
+                displayItems(database);
+            }
+
+            loadDatabase();
+        </script>
+    </body>
 </html>
