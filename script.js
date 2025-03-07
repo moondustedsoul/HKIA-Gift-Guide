@@ -7,13 +7,20 @@ async function loadTermImages() {
 
 // Replace terms with images in text
 function replaceTermsWithImages(text) {
-    Object.keys(termImages).forEach(term => {
-        const regex = new RegExp(`\\b${term}\\b`, "gi");
+    // Sort terms by length in descending order
+    const sortedTerms = Object.keys(termImages).sort((a, b) => b.length - a.length);
+
+    // Replace terms with images, ensuring the longest term is replaced first
+    sortedTerms.forEach(term => {
+        const regex = new RegExp(`\\b${term}\\b`, "gi"); // Match the whole word
         const imageTag = `<img src="${termImages[term]}" alt="${term}" style="width: 20px; vertical-align: middle;">`;
         text = text.replace(regex, `${imageTag} ${term}`);
     });
+
     return text;
 }
+
+
 
 function displayItems(items) {
     const container = document.getElementById("itemsContainer");
