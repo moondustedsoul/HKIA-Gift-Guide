@@ -52,12 +52,8 @@
                 container.innerHTML = "";
 
                 items.forEach(item => {
-                    // Check if images exist before using them
-                    let characterImages = item.images && item.images.character
-                        ? (Array.isArray(item.images.character) 
-                            ? item.images.character.map(img => `<img src="${img}" alt="Character">`).join(' ') 
-                            : `<img src="${item.images.character}" alt="Character">`)
-                        : "No character image"; // Fallback if missing
+                    // Display character names as text (no image)
+                    let characterNames = item.character.join(", ");  // Join multiple characters if any
 
                     let sourceTextParts = item.source.split(" + "); 
                     let sourceImages = item.images && item.images.source
