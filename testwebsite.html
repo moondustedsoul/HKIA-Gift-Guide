@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Item Database</title>
+    <style>
+        .item-card { border: 1px solid #ddd; padding: 10px; margin: 10px; width: 300px; }
+        .item-card img { max-width: 50px; vertical-align: middle; }
+    </style>
+</head>
+<body>
+    <div>
+        <label for="characterFilter">Filter by Character:</label>
+        <select id="characterFilter">
+            <option value="">All</option>
+            <option value="Warrior">Warrior</option>
+            <option value="Paladin">Paladin</option>
+            <option value="All">All</option>
+        </select>
+        <button onclick="filterItems()">Filter</button>
+    </div>
+
+    <div id="itemsContainer"></div>
+
+    <script>
+        let database = [];
+
+        async function loadDatabase() {
+            // Load JSON data (replace with an actual JSON file if needed)
+            database = await fetch('data.json').then(res => res.json());
+            displayItems(database);
+        }
+
+        function displayItems(items) {
+            const container = document.getElementById("itemsContainer");
+            container.innerHTML = "";
+
+            items.forEach(item => {
+                let characterImages = item.images.character ? item.images.character.map(img => `<img src="${img}" alt="Character">`).join(' ') : "";
+                
+                container.innerHTML += `
+                    <div class="item-card">
+                        <h3><img src="${item.images.item}" alt="${item.item}"> ${item.item}</h3>
+                        <p><strong>Character:</strong> ${characterImages}</p>
+                        <p><strong>Value:</strong> ${item.value}</p>
+                        <p><strong>Hearts:</strong> ${item.hearts}</p>
+                        <p><strong>Source:</strong> <img src="${item.images.source}" alt="Source"> ${item.source}</p>
+                        <p><strong>Requirements:</strong> ${item.requirements}</p>
+                        <p><strong>Comments:</strong> ${item.comments}</p>
+                    </div>
+                `;
+            });
+        }
+
+        function filterItems() {
+            const selectedCharacter = document.getElementById("characterFilter").value;
+            const filteredItems = database.filter(item => 
+                selectedCharacter === "" || item.character.includes(selectedCharacter) || item.character.includes("All")
+            );
+            displayItems(filteredItems);
+        }
+
+        loadDatabase();
+    </script>
+</body>
+</html>
