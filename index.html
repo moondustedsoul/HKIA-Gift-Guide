@@ -55,7 +55,9 @@
                     // Ensure character is an array, even if it's just a single value
                     let characterNames = Array.isArray(item.character) ? item.character : [item.character];  // Convert to array if it's not
 
-                    let sourceTextParts = item.source.split(" + "); 
+                    characterNames = characterNames.join(", ");  // Join multiple characters if any
+
+                    let sourceTextParts = item.source.split(" + ");
                     let sourceImages = item.images && item.images.source
                         ? (Array.isArray(item.images.source) 
                             ? sourceTextParts.map((text, index) => 
@@ -67,7 +69,7 @@
                     container.innerHTML += `
                         <div class="item-card">
                             <h3>${item.images && item.images.item ? `<img src="${item.images.item}" alt="${item.item}">` : ""} ${replaceTermsWithImages(item.item)}</h3>
-                            <p><strong>Character:</strong> ${characterImages}</p>
+                            <p><strong>Character:</strong> ${characterNames}</p> <!-- Display character names as text -->
                             <p><strong>Value:</strong> ${item.value}</p>
                             <p><strong>Hearts:</strong> ${item.hearts}</p>
                             <p><strong>Source:</strong> ${sourceImages}</p>
