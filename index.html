@@ -31,8 +31,20 @@
                 termImages = await fetch('terms.json').then(res => res.json());
             }
 
-            // Function to replace terms with images in any text
+            // Function to replace terms (including character names) with images in any text
             function replaceTermsWithImages(text) {
+                // Replace character names with their images if available
+                for (const character in termImages) {
+                    const regex = new RegExp(`\\b${character}\\b`, "gi");  // Match character name case-insensitively
+
+                    // If there's an image for this character, add it before the name
+                    text = text.replace(regex, (match) => {
+                        const imageSrc = termImages[character.toLowerCase()];  // Get the character's image path
+                        const imageTag = imageSrc ? `<img src="${imageSrc}" alt="${match}" style="width: 20px; vertical-align: middle;">` : "";
+                        return imageTag + " " + match;  // Add image before the character name
+                    });
+                }
+
                 // Replace other terms (like "pineapple", etc.) with images as before
                 for (const term in termImages) {
                     const regex = new RegExp(`\\b${term}\\b`, "gi");
@@ -43,13 +55,12 @@
                 return text;
             }
 
-            // Update displayed items with term images
             function displayItems(items) {
                 const container = document.getElementById("itemsContainer");
                 container.innerHTML = "";
 
                 items.forEach(item => {
-                    // Display character names as text (no image handling here)
+                    // Display character names as text (no image handling here for the 'Character' field)
                     let characterNames = item.character.join(", ");  // Join multiple characters if any
                     characterNames = replaceTermsWithImages(characterNames);  // Add character image in front of the name (via replaceTermsWithImages)
 
@@ -65,7 +76,7 @@
                     container.innerHTML += `
                         <div class="item-card">
                             <h3>${item.images && item.images.item ? `<img src="${item.images.item}" alt="${item.item}">` : ""} ${replaceTermsWithImages(item.item)}</h3>
-                            <p><strong>Character:</strong> ${characterNames}</p> <!-- Display character names as text, images inserted via replaceTermsWithImages -->
+                            <p><strong>Character:</strong> ${characterNames}</p> <!-- Character names displayed as text, images inserted via replaceTermsWithImages -->
                             <p><strong>Value:</strong> ${item.value}</p>
                             <p><strong>Hearts:</strong> ${item.hearts}</p>
                             <p><strong>Source:</strong> ${sourceImages}</p>
@@ -75,7 +86,6 @@
                     `;
                 });
             }
-
 
             // Function to filter items based on character selection
             function filterItems() {
