@@ -7,18 +7,11 @@ async function loadTermImages() {
 
 // Replace terms with images in text
 function replaceTermsWithImages(text) {
-    // Sort terms by length (longest first)
-    const sortedTerms = Object.keys(termImages).sort((a, b) => b.length - a.length);
-
-    // Replace terms with images
-    sortedTerms.forEach(term => {
+    Object.keys(termImages).forEach(term => {
         const regex = new RegExp(`\\b${term}\\b`, "gi");
         const imageTag = `<img src="${termImages[term]}" alt="${term}" style="width: 20px; vertical-align: middle;">`;
-
-        // Replace the term with its corresponding image
-        text = text.replace(regex, imageTag + " " + term);
+        text = text.replace(regex, `${imageTag} ${term}`);
     });
-
     return text;
 }
 
