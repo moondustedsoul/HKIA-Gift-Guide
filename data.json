@@ -1,7 +1,7 @@
 [
   {
     "item": "Ultimate Joke Pizza",
-    "character": "Badtz-maru",
+    "character": ["Badtz-maru"],
     "value": 10,
     "hearts": 3,
     "source": "Dough + Pineapple + Tofu",
