@@ -37,15 +37,23 @@
             container.innerHTML = "";
 
             items.forEach(item => {
-                let characterImages = item.images.character ? item.images.character.map(img => `<img src="${img}" alt="Character">`).join(' ') : "";
-                
+                // Handle character images (supports single string OR array)
+                let characterImages = Array.isArray(item.images.character) 
+                    ? item.images.character.map(img => `<img src="${img}" alt="Character">`).join(' ') 
+                    : `<img src="${item.images.character}" alt="Character">`;
+
+                // Handle source images (supports single string OR array)
+                let sourceImages = Array.isArray(item.images.source) 
+                    ? item.images.source.map(img => `<img src="${img}" alt="Source">`).join(' ') 
+                    : `<img src="${item.images.source}" alt="Source">`;
+
                 container.innerHTML += `
                     <div class="item-card">
                         <h3><img src="${item.images.item}" alt="${item.item}"> ${item.item}</h3>
                         <p><strong>Character:</strong> ${characterImages}</p>
                         <p><strong>Value:</strong> ${item.value}</p>
                         <p><strong>Hearts:</strong> ${item.hearts}</p>
-                        <p><strong>Source:</strong> <img src="${item.images.source}" alt="Source"> ${item.source}</p>
+                        <p><strong>Source:</strong> ${sourceImages} ${item.source}</p>
                         <p><strong>Requirements:</strong> ${item.requirements}</p>
                         <p><strong>Comments:</strong> ${item.comments}</p>
                     </div>
