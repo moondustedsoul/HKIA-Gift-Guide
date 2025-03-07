@@ -60,8 +60,17 @@
                 container.innerHTML = "";
 
                 items.forEach(item => {
-                    // Display character names as text (no image handling here for the 'Character' field)
-                    let characterNames = item.character.join(", ");  // Join multiple characters if any
+                    // Log the character array to check its structure
+                    console.log("item.character:", item.character);
+
+                    // Ensure that 'character' is an array
+                    if (!Array.isArray(item.character)) {
+                        console.error(`Expected 'character' to be an array, but got: ${typeof item.character}`);
+                        return;
+                    }
+
+                    // Join character names as a string and process them
+                    let characterNames = item.character.join(", ");  // This will work if it's an array
                     characterNames = replaceTermsWithImages(characterNames);  // Add character image in front of the name (via replaceTermsWithImages)
 
                     let sourceTextParts = item.source.split(" + ");
