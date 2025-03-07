@@ -34,16 +34,19 @@ function displayItems(items) {
     container.innerHTML = "";
 
     items.forEach(item => {
-        // Apply replaceTermsWithImages to ALL text content
-        let itemName = replaceTermsWithImages(item.item);
-        let characterNames = replaceTermsWithImages(item.character.join(", "));
-        let valueText = replaceTermsWithImages(item.value.toString());
-        let heartsText = replaceTermsWithImages(item.hearts.toString());
-        let sourceText = replaceTermsWithImages(item.source);
-        let requirementsText = replaceTermsWithImages(item.requirements);
-        let commentsText = replaceTermsWithImages(item.comments);
+        // Log the character array to check its structure
+        console.log("item.character:", item.character);
 
-        // Apply the same replacement for item sources and images
+        // Ensure that 'character' is an array
+        if (!Array.isArray(item.character)) {
+            console.error(`Expected 'character' to be an array, but got: ${typeof item.character}`);
+            return;
+        }
+
+        // Join character names as a string and process them
+        let characterNames = item.character.join(", ");  // This will work if it's an array
+        characterNames = replaceTermsWithImages(characterNames);  // Add character image in front of the name (via replaceTermsWithImages)
+
         let sourceTextParts = item.source.split(" + ");
         let sourceImages = item.images && item.images.source
             ? (Array.isArray(item.images.source) 
@@ -55,31 +58,16 @@ function displayItems(items) {
 
         container.innerHTML += `
             <div class="item-card">
-                <h3>${item.images && item.images.item ? `<img src="${item.images.item}" alt="${item.item}">` : ""} ${itemName}</h3>
-                <p><strong>Character:</strong> ${characterNames}</p>
-                <p><strong>Value:</strong> ${valueText}</p>
-                <p><strong>Hearts:</strong> ${heartsText}</p>
+                <h3>${item.images && item.images.item ? `<img src="${item.images.item}" alt="${item.item}">` : ""} ${replaceTermsWithImages(item.item)}</h3>
+                <p><strong>Character:</strong> ${characterNames}</p> <!-- Character names displayed as text, images inserted via replaceTermsWithImages -->
+                <p><strong>Value:</strong> ${item.value}</p>
+                <p><strong>Hearts:</strong> ${item.hearts}</p>
                 <p><strong>Source:</strong> ${sourceImages}</p>
-                <p><strong>Requirements:</strong> ${requirementsText}</p>
-                <p><strong>Comments:</strong> ${commentsText}</p>
+                <p><strong>Requirements:</strong> ${replaceTermsWithImages(item.requirements)}</p>
+                <p><strong>Comments:</strong> ${replaceTermsWithImages(item.comments)}</p>
             </div>
         `;
     });
-}
-
-function replaceTextInDocument() {
-    const bodyTextNodes = document.body.getElementsByTagName('*'); // Get all elements in the body
-
-    // Loop through all elements and replace text content
-    for (let node of bodyTextNodes) {
-        if (node.childNodes.length > 0) {
-            node.childNodes.forEach(child => {
-                if (child.nodeType === 3) { // Only modify text nodes
-                    child.textContent = replaceTermsWithImages(child.textContent);
-                }
-            });
-        }
-    }
 }
 
 // Function to filter items based on character selection
@@ -103,7 +91,6 @@ async function loadDatabase() {
     await loadTermImages();
     database = await fetch('data.json').then(res => res.json());
     displayItems(database);
-    replaceTextInDocument();  // Call to replace all text on the page
 }
 
 loadDatabase();
