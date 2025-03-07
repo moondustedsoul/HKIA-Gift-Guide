@@ -33,16 +33,13 @@
 
             // Function to replace terms with images in any text
             function replaceTermsWithImages(text) {
+                // Replace other terms (like "pineapple", etc.) with images as before
                 for (const term in termImages) {
-                    // Match the term with the original case (this won't force lowercase)
-                    const regex = new RegExp(`\\b${term}\\b`, "gi"); // Match whole words, case-insensitive
-
-                    // Function to replace the matched term while keeping its original case
-                    text = text.replace(regex, (match) => {
-                        const imageTag = `<img src="${termImages[term]}" alt="${term}" style="width: 20px; vertical-align: middle;">`;
-                        return imageTag + " " + match;
-                    });
+                    const regex = new RegExp(`\\b${term}\\b`, "gi");
+                    const imageTag = `<img src="${termImages[term]}" alt="${term}" style="width: 20px; vertical-align: middle;">`;
+                    text = text.replace(regex, imageTag + " " + term);
                 }
+
                 return text;
             }
 
@@ -52,10 +49,9 @@
                 container.innerHTML = "";
 
                 items.forEach(item => {
-                    // Ensure character is an array, even if it's just a single value
-                    let characterNames = Array.isArray(item.character) ? item.character : [item.character];  // Convert to array if it's not
-
-                    characterNames = characterNames.join(", ");  // Join multiple characters if any
+                    // Display character names as text (no image handling here)
+                    let characterNames = item.character.join(", ");  // Join multiple characters if any
+                    characterNames = replaceTermsWithImages(characterNames);  // Add character image in front of the name (via replaceTermsWithImages)
 
                     let sourceTextParts = item.source.split(" + ");
                     let sourceImages = item.images && item.images.source
@@ -69,7 +65,7 @@
                     container.innerHTML += `
                         <div class="item-card">
                             <h3>${item.images && item.images.item ? `<img src="${item.images.item}" alt="${item.item}">` : ""} ${replaceTermsWithImages(item.item)}</h3>
-                            <p><strong>Character:</strong> ${characterNames}</p> <!-- Display character names as text -->
+                            <p><strong>Character:</strong> ${characterNames}</p> <!-- Display character names as text, images inserted via replaceTermsWithImages -->
                             <p><strong>Value:</strong> ${item.value}</p>
                             <p><strong>Hearts:</strong> ${item.hearts}</p>
                             <p><strong>Source:</strong> ${sourceImages}</p>
@@ -79,6 +75,7 @@
                     `;
                 });
             }
+
 
             // Function to filter items based on character selection
             function filterItems() {
