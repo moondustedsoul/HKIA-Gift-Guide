@@ -56,7 +56,7 @@ function displayItems(items) {
                 ? sourceTextParts.map((text, index) => 
                     (item.images.source[index] ? `<img src="${item.images.source[index]}" alt="Source"> ` : "") + replaceTermsWithImages(text)
                 ).join(" + ") 
-                : `<img src="${item.images.source}" alt="Source"> ${replaceTermsWithImages(item.source)}`)
+                : `<img src="${item.images.source}" alt="Source"> ${replaceTermsWithImages(item.source)}`) 
             : replaceTermsWithImages(item.source); // Fallback if missing
 
         container.innerHTML += `
@@ -73,6 +73,7 @@ function displayItems(items) {
     });
 }
 
+// Function to replace all text in the document, including those in the body
 function replaceTextInDocument() {
     const bodyTextNodes = document.body.getElementsByTagName('*'); // Get all elements in the body
 
@@ -109,7 +110,7 @@ async function loadDatabase() {
     await loadTermImages();
     database = await fetch('data.json').then(res => res.json());
     displayItems(database);
-    replaceTextInDocument();  // Call to replace all text on the page
+    replaceTextInDocument();  // Call to replace all text on the page after the database is loaded
 }
 
 loadDatabase();
