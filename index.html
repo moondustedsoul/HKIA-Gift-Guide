@@ -28,7 +28,7 @@
 
         async function loadDatabase() {
             // Load JSON data (replace with an actual JSON file if needed)
-            database = await fetch('data.json').then(res => res.json());
+            database = await fetch('testdatabase.json').then(res => res.json());
             displayItems(database);
         }
 
