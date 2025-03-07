@@ -20,10 +20,22 @@
     "Kiki": "images/characters/Kiki_Icon.webp",
     "Lala": "images/characters/Lala_Icon.webp",
     
-    
+
     "Dough": "images/sources/Dough.png",
     "Pineapple": "images/sources/Pineapple.png",
     "Pineapples": "images/sources/Pineapple.png",
     "Tofu": "images/sources/Tofu.png",
-    "Ultimate Joke Pizza": "images/craftables/Ultimate_Joke_Pizza.png"
+    
+    
+    "Ultimate Joke Pizza": "images/craftables/Ultimate_Joke_Pizza.png",
+
+
+    "Oven": "images/appliances/Oven.png",
+    "Crafting Table": "images/appliances/Crafting_Table.png",
+    "Espresso Machine": "images/appliances/Espresso_Machine.png",
+    "Soda Machine": "images/appliances/Soda_Machine.png",
+    "Dessert Machine": "images/appliances/Dessert_Machine.png",
+    "Egg Pan Station": "images/appliances/Egg_Pan_Station.png",
+    "Pizza Oven": "images/appliances/Pizza_Oven.png",
+    "Candy Cloud Machine": "images/appliances/Candy_Cloud_Machine.png"
 }
