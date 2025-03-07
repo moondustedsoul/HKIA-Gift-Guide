@@ -7,6 +7,12 @@ async function loadTermImages() {
 
 // Function to replace terms (including character names) with images in any text
 function replaceTermsWithImages(text) {
+    // Skip processing if it's already an image or HTML content
+    const htmlTagRegex = /<[^>]*>/g;
+    if (htmlTagRegex.test(text)) {
+        return text;  // Return the text without processing if it's HTML
+    }
+
     // Replace character names with their images if available
     for (const character in termImages) {
         const regex = new RegExp(`\\b${character}\\b`, "gi");  // Match character name case-insensitively
