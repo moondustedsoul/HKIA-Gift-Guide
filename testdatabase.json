@@ -1,0 +1,29 @@
+[
+  {
+    "item": "Magic Sword",
+    "character": ["Warrior", "Paladin"],
+    "value": 500,
+    "hearts": 3,
+    "source": "Forged from dragon scales",
+    "requirements": "Level 10+",
+    "comments": "A powerful weapon used by ancient heroes.",
+    "images": {
+      "item": "images/magic_sword.png",
+      "character": ["images/warrior.png", "images/paladin.png"],
+      "source": "images/dragon_scale.png"
+    }
+  },
+  {
+    "item": "Healing Potion",
+    "character": ["All"],
+    "value": 50,
+    "hearts": 1,
+    "source": "Herbs and enchanted water",
+    "requirements": "None",
+    "comments": "Restores 3 hearts upon use.",
+    "images": {
+      "item": "images/healing_potion.png",
+      "source": "images/herbs.png"
+    }
+  }
+]
