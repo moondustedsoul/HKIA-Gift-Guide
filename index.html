@@ -34,9 +34,14 @@
             // Function to replace terms with images in any text
             function replaceTermsWithImages(text) {
                 for (const term in termImages) {
-                    const imageTag = `<img src="${termImages[term]}" alt="${term}" style="width: 20px; vertical-align: middle;">`;
+                    // Match the term with the original case (this won't force lowercase)
                     const regex = new RegExp(`\\b${term}\\b`, "gi"); // Match whole words, case-insensitive
-                    text = text.replace(regex, imageTag + " " + term);
+
+                    // Function to replace the matched term while keeping its original case
+                    text = text.replace(regex, (match) => {
+                        const imageTag = `<img src="${termImages[term]}" alt="${term}" style="width: 20px; vertical-align: middle;">`;
+                        return imageTag + " " + match;
+                    });
                 }
                 return text;
             }
