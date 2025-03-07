@@ -52,8 +52,8 @@
                 container.innerHTML = "";
 
                 items.forEach(item => {
-                    // Display character names as text (no image)
-                    let characterNames = item.character.join(", ");  // Join multiple characters if any
+                    // Ensure character is an array, even if it's just a single value
+                    let characterNames = Array.isArray(item.character) ? item.character : [item.character];  // Convert to array if it's not
 
                     let sourceTextParts = item.source.split(" + "); 
                     let sourceImages = item.images && item.images.source
