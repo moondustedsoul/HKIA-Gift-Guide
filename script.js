@@ -8,16 +8,16 @@ async function loadTermImages() {
 // Function to replace terms (including character names) with images in any text
 function replaceTermsWithImages(text) {
     // Replace character names with their images if available
-    for (const character in termImages) {
-        const regex = new RegExp(`\\b${character}\\b`, "gi");  // Match character name case-insensitively
+    // for (const character in termImages) {
+    //     const regex = new RegExp(`\\b${character}\\b`, "gi");  // Match character name case-insensitively
 
-        // If there's an image for this character, add it before the name
-        text = text.replace(regex, (match) => {
-            const imageSrc = termImages[character.toLowerCase()];  // Get the character's image path
-            const imageTag = imageSrc ? `<img src="${imageSrc}" alt="${match}" style="width: 20px; vertical-align: middle;">` : "";
-            return imageTag + " " + match;  // Add image before the character name
-        });
-    }
+    //     // If there's an image for this character, add it before the name
+    //     text = text.replace(regex, (match) => {
+    //         const imageSrc = termImages[character.toLowerCase()];  // Get the character's image path
+    //         const imageTag = imageSrc ? `<img src="${imageSrc}" alt="${match}" style="width: 20px; vertical-align: middle;">` : "";
+    //         return imageTag + " " + match;  // Add image before the character name
+    //     });
+    // }
 
     // Replace other terms (like "pineapple", etc.) with images as before
     for (const term in termImages) {
