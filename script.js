@@ -7,12 +7,6 @@ async function loadTermImages() {
 
 // Function to replace terms (including character names) with images in any text
 function replaceTermsWithImages(text) {
-    // Skip processing if it's already an image or HTML content
-    const htmlTagRegex = /<[^>]*>/g;
-    if (htmlTagRegex.test(text)) {
-        return text;  // Return the text without processing if it's HTML
-    }
-
     // Replace character names with their images if available
     for (const character in termImages) {
         const regex = new RegExp(`\\b${character}\\b`, "gi");  // Match character name case-insensitively
@@ -56,7 +50,7 @@ function displayItems(items) {
                 ? sourceTextParts.map((text, index) => 
                     (item.images.source[index] ? `<img src="${item.images.source[index]}" alt="Source"> ` : "") + replaceTermsWithImages(text)
                 ).join(" + ") 
-                : `<img src="${item.images.source}" alt="Source"> ${replaceTermsWithImages(item.source)}`) 
+                : `<img src="${item.images.source}" alt="Source"> ${replaceTermsWithImages(item.source)}`)
             : replaceTermsWithImages(item.source); // Fallback if missing
 
         container.innerHTML += `
@@ -73,7 +67,6 @@ function displayItems(items) {
     });
 }
 
-// Function to replace all text in the document, including those in the body
 function replaceTextInDocument() {
     const bodyTextNodes = document.body.getElementsByTagName('*'); // Get all elements in the body
 
@@ -110,7 +103,7 @@ async function loadDatabase() {
     await loadTermImages();
     database = await fetch('data.json').then(res => res.json());
     displayItems(database);
-    replaceTextInDocument();  // Call to replace all text on the page after the database is loaded
+    replaceTextInDocument();  // Call to replace all text on the page
 }
 
 loadDatabase();
