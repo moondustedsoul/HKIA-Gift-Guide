@@ -10,7 +10,7 @@ function replaceTermsWithImages(text) {
     Object.keys(termImages).forEach(term => {
         const regex = new RegExp(`\\b${term}\\b`, "gi");
         const imageTag = `<img src="${termImages[term]}" alt="${term}" style="width: 20px; vertical-align: middle;">`;
-        text = text.replace(regex, `${imageTag} ${term}`);
+        text = text.replace(regex, imageTag); // Replace term with image tag only
     });
     return text;
 }
