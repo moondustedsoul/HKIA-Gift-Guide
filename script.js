@@ -9,7 +9,7 @@ async function loadTermImages() {
 function replaceTermsWithImages(text) {
     Object.keys(termImages).forEach(term => {
         const regex = new RegExp(`\\b${term}\\b`, "gi");
-        const imageTag = `<img src="${termImages[term]}" alt="${term}>`;
+        const imageTag = `<img src="${termImages[term]}" alt="${term}">`;
         text = text.replace(regex, `${imageTag} ${term}`);
     });
     return text;
