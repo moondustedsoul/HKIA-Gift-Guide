@@ -3,8 +3,16 @@ let database = [];
 
 // Load term-image mappings from JSON
 async function loadTermImages() {
-    termImages = await fetch('terms.json').then(res => res.json());
-    console.log(termImages); // Check if images are loaded correctly
+    try {
+        const response = await fetch('terms.json');
+        if (!response.ok) {
+            throw new Error(`Failed to fetch terms.json: ${response.statusText}`);
+        }
+        termImages = await response.json();
+        console.log(termImages); // This should log the data if it's loaded successfully
+    } catch (error) {
+        console.error("Error loading term images:", error);
+    }
 }
 
 // Replace IDs with images and names
@@ -23,10 +31,10 @@ function displayItems(items) {
     container.innerHTML = items.map(item => {
         const characterNames = replaceIDsWithIcons(item.character.join(", "));
         const sourceText = replaceIDsWithIcons(item.source);
-        const requirementsText = item.requirements 
-            ? replaceIDsWithIcons(Array.isArray(item.requirements) ? item.requirements.join(", ") : item.requirements) 
+        const requirementsText = item.requirements
+            ? replaceIDsWithIcons(Array.isArray(item.requirements) ? item.requirements.join(", ") : item.requirements)
             : "None";
-        
+
         return `
             <div class="item-card">
                 <h3>${replaceIDsWithIcons(item.item)}</h3>
@@ -46,7 +54,7 @@ function filterItems() {
     const selectedAppliance = document.getElementById("applianceFilter").value;
     if (!database.length) return console.error("Database is not loaded yet!");
 
-    const filteredItems = database.filter(item => 
+    const filteredItems = database.filter(item =>
         (selectedCharacter === "all" || item.character.includes(selectedCharacter)) &&
         (selectedAppliance === "all" || item.requirements.includes(selectedAppliance))
     );
