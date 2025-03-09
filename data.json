@@ -1,12 +1,12 @@
 [
   {
-    "item": "item_01",
-    "character": ["char_01"],
+    "item": ".ultimate-joke-pizza",
+    "character": [".badtz-maru"],
     "value": 10,
     "hearts": 3,
-    "source": "Dough + Pineapple + Tofu",
-    "requirements": "appl_01 Upgrade",
-    "comments": "Great value, but it is possible to run short on Pineapples because Tuxedosam's 3-heart gift also requires them. Save up in the early game."
+    "source": ".dough + .pineapple + .tofu",
+    "requirements": ".pizza-oven Upgrade",
+    "comments": "Great value, but it is possible to run short on .pineapples because .tuxedosam's 3-heart gift also requires them. Save up in the early game."
   },
   {
     "item": "Healing Potion",
