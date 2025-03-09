@@ -1,41 +1,12 @@
 {
-    "Badtz-maru": "images/characters/Badtz-maru_Icon.webp",
-    "Chococat": "images/characters/Chococat_Icon.webp",
-    "Hello Kitty": "images/characters/Hello-Kitty_Icon.webp",
-    "My Melody": "images/characters/My-Melody_Icon.webp",
-    "Pochacco": "images/characters/Pochacco_Icon.webp",
-    "Tuxedosam": "images/characters/Tuxedosam_Icon.webp",
-    "Keroppi": "images/characters/Keroppi_Icon.webp",
-    "Kuromi": "images/characters/Kuromi_Icon.webp",
-    "Cinnamoroll": "images/characters/Cinnamoroll_Icon.webp",
-    "Pekkle": "images/characters/Pekkle_Icon.webp",
-    "Pompompurin": "images/characters/Pompompurin_Icon.webp",
-    "Retsuko": "images/characters/Retsuko_Icon.webp",
-    "Hangyodon": "images/characters/Hangyodon_Icon.webp",
-    "Usahana": "images/characters/Usahana_Icon.webp",
-    "Wish me mell": "images/characters/Wish-me-mell_Icon.webp",
-    "My Sweet Piano": "images/characters/My-Sweet-Piano_Icon.webp",
-    "Big Challenges": "images/characters/Big-Challenges_Icon.webp",
-    "TOPHAT": "images/characters/TOPHAT_Icon.webp",
-    "Kiki": "images/characters/Kiki_Icon.webp",
-    "Lala": "images/characters/Lala_Icon.webp",
+    "char_01": { "name": "Badtz-maru", "img": "images/characters/Badtz-maru_Icon.webp" },
+    "char_02": { "name": "Hello Kitty", "img": "images/characters/Hello-Kitty_Icon.webp" },
+    "char_03": { "name": "Chococat", "img": "images/characters/Chococat_Icon.webp" },
     
-
-    "Dough": "images/sources/Dough.png",
-    "Pineapple": "images/sources/Pineapple.png",
-    "Pineapples": "images/sources/Pineapple.png",
-    "Tofu": "images/sources/Tofu.png",
+    "appl_01": { "name": "Pizza Oven", "img": "images/appliances/Pizza_Oven.png" },
+    "appl_02": { "name": "Oven", "img": "images/appliances/Oven.png" },
+    "appl_03": { "name": "Soda Machine", "img": "images/appliances/Soda_Machine.png" },
     
-    
-    "Ultimate Joke Pizza": "images/craftables/Ultimate_Joke_Pizza.png",
-
-
-    "Pizza Oven": "images/appliances/Pizza_Oven.png",
-    "Oven": "images/appliances/Oven.png",
-    "Crafting Table": "images/appliances/Crafting_Table.png",
-    "Espresso Machine": "images/appliances/Espresso_Machine.png",
-    "Soda Machine": "images/appliances/Soda_Machine.png",
-    "Dessert Machine": "images/appliances/Dessert_Machine.png",
-    "Egg Pan Station": "images/appliances/Egg_Pan_Station.png",
-    "Candy Cloud Machine": "images/appliances/Candy_Cloud_Machine.png"
+    "item_01": { "name": "Ultimate Joke Pizza", "img": "images/craftables/Ultimate_Joke_Pizza.png" },
+    "item_02": { "name": "Healing Potion", "img": "images/craftables/Healing_Potion.png" }
 }

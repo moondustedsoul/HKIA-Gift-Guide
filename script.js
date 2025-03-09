@@ -1,39 +1,38 @@
 let termImages = {};
+let database = [];
 
 // Load term-image mappings from JSON
 async function loadTermImages() {
     termImages = await fetch('terms.json').then(res => res.json());
 }
 
-// Replace terms with images in text
-function replaceTermsWithImages(text) {
-    Object.keys(termImages).forEach(term => {
-        const regex = new RegExp(`\\b${term}\\b`, "gi");
-        const imageTag = `<img src="${termImages[term]}" alt="${term}" style="width: 20px; vertical-align: middle;">`;
-        text = text.replace(regex, `${imageTag} ${term}`);
+// Replace IDs with images and names
+function replaceIDsWithIcons(text) {
+    return text.replace(/\b(char_\d+|appl_\d+)\b/g, (match) => {
+        if (termImages[match]) {
+            const { name, img } = termImages[match];
+            return `<img src="${img}" alt="${name}" style="width: 20px; vertical-align: middle;"> ${name}`;
+        }
+        return match;
     });
-    return text;
 }
 
 function displayItems(items) {
     const container = document.getElementById("itemsContainer");
     container.innerHTML = items.map(item => {
-        const characterNames = replaceTermsWithImages(item.character.join(", "));
-        const sourceText = item.images && item.images.source
-            ? (Array.isArray(item.images.source)
-                ? item.source.split(" + ").map((text, i) => `<img src="${item.images.source[i]}" alt="Source"> ${replaceTermsWithImages(text)}`).join(" + ")
-                : `<img src="${item.images.source}" alt="Source"> ${replaceTermsWithImages(item.source)}`)
-            : replaceTermsWithImages(item.source);
-
+        const characterNames = replaceIDsWithIcons(item.character.join(", "));
+        const sourceText = replaceIDsWithIcons(item.source);
+        const requirementsText = replaceIDsWithIcons(item.requirements.join(", "));
+        
         return `
             <div class="item-card">
-                <h3>${item.images?.item ? `<img src="${item.images.item}" alt="${item.item}">` : ""} ${replaceTermsWithImages(item.item)}</h3>
+                <h3>${replaceIDsWithIcons(item.item)}</h3>
                 <p><strong>Character:</strong> ${characterNames}</p>
                 <p><strong>Value:</strong> ${item.value}</p>
                 <p><strong>Hearts:</strong> ${item.hearts}</p>
                 <p><strong>Source:</strong> ${sourceText}</p>
-                <p><strong>Requirements:</strong> ${replaceTermsWithImages(item.requirements)}</p>
-                <p><strong>Comments:</strong> ${replaceTermsWithImages(item.comments)}</p>
+                <p><strong>Requirements:</strong> ${requirementsText}</p>
+                <p><strong>Comments:</strong> ${replaceIDsWithIcons(item.comments)}</p>
             </div>
         `;
     }).join('');
@@ -41,20 +40,37 @@ function displayItems(items) {
 
 function filterItems() {
     const selectedCharacter = document.getElementById("characterFilter").value;
+    const selectedAppliance = document.getElementById("applianceFilter").value;
     if (!database.length) return console.error("Database is not loaded yet!");
 
-    const filteredItems = selectedCharacter === "all"
-        ? database
-        : database.filter(item => item.character.includes(selectedCharacter));
+    const filteredItems = database.filter(item => 
+        (selectedCharacter === "all" || item.character.includes(selectedCharacter)) &&
+        (selectedAppliance === "all" || item.requirements.includes(selectedAppliance))
+    );
 
     displayItems(filteredItems);
 }
 
-// Load term images and database, then display items
-async function loadDatabase() {
+async function createFilterOptions() {
     await loadTermImages();
+    const characterFilter = document.getElementById("characterFilter");
+    const applianceFilter = document.getElementById("applianceFilter");
+
+    Object.entries(termImages).forEach(([id, { name, img }]) => {
+        if (id.startsWith("char_")) {
+            characterFilter.innerHTML += `<option value="${id}"><img src="${img}" alt="${name}"> ${name}</option>`;
+        }
+        if (id.startsWith("appl_")) {
+            applianceFilter.innerHTML += `<option value="${id}"><img src="${img}" alt="${name}"> ${name}</option>`;
+        }
+    });
+}
+
+// Load database and terms, then display items
+async function loadDatabase() {
+    await createFilterOptions();
     database = await fetch('data.json').then(res => res.json());
     displayItems(database);
 }
 
-loadDatabase();
+document.addEventListener("DOMContentLoaded", loadDatabase);
