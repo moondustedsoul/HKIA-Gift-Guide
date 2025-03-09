@@ -22,7 +22,7 @@ function displayItems(items) {
     container.innerHTML = items.map(item => {
         const characterNames = replaceIDsWithIcons(item.character.join(", "));
         const sourceText = replaceIDsWithIcons(item.source);
-        const requirementsText = replaceIDsWithIcons(item.requirements.join(", "));
+        const requirementsText = replaceIDsWithIcons(Array.isArray(item.requirements) ? item.requirements.join(", ") : item.requirements);
         
         return `
             <div class="item-card">
