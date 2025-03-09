@@ -8,7 +8,7 @@ async function loadTermImages() {
 
 // Replace IDs with images and names
 function replaceIDsWithIcons(text) {
-    return text.replace(/\b(char_\d+|appl_\d+)\b/g, (match) => {
+    return text.replace(/\b\.[\w\-]+\b/g, (match) => {
         if (termImages[match]) {
             const { name, img } = termImages[match];
             return `<img src="${img}" alt="${name}" style="width: 20px; vertical-align: middle;"> ${name}`;
