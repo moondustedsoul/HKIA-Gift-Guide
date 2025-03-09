@@ -17,6 +17,7 @@ async function loadTermImages() {
 
 // Replace IDs with images and names
 function replaceIDsWithIcons(text) {
+    console.log("Processing text:", text);  // Log the text being passed
     return text.replace(/\b\.[\w\-]+\b/g, (match) => {
         if (termImages[match]) {
             const { name, img } = termImages[match];
