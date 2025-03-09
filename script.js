@@ -4,6 +4,7 @@ let database = [];
 // Load term-image mappings from JSON
 async function loadTermImages() {
     termImages = await fetch('terms.json').then(res => res.json());
+    console.log(termImages); // Check if images are loaded correctly
 }
 
 // Replace IDs with images and names
