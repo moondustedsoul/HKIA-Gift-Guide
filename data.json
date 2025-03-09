@@ -6,7 +6,7 @@
     "hearts": 3,
     "source": "|dough| + |pineapple| + |tofu|",
     "requirements": "|pizza-oven| Upgrade",
-    "comments": "Great value, but it is possible to run short on |pineapple|s because |tuxedosam|'s 3-heart gift also requires them| Save up in the early game."
+    "comments": "Great value, but it is possible to run short on |pineapple|s because |tuxedosam|'s 3-heart gift also requires them. Save up in the early game."
   },
   {
     "item": "Healing Potion",
