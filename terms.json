@@ -33,6 +33,7 @@
 
     ".dough": { "name": "Dough", "img": "images/sources/Dough.png" },
     ".pineapple": { "name": "Pineapple", "img": "images/sources/Pineapple.png" },
+        ".pineapples": { "name": "Pineapples", "img": "images/sources/Pineapple.png" },
     ".tofu": { "name": "Tofu", "img": "images/sources/Tofu.png" },
     ".spinip": { "name": "Spinip", "img": "images/sources/Spinip.png" },
     ".coral-milk": { "name": "Coral Milk", "img": "images/sources/Coral_Milk.png" },
