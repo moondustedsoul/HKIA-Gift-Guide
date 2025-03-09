@@ -63,7 +63,7 @@ async function createFilterOptions() {
             characterFilter.innerHTML += `<option value="${id}">${name}</option>`;
         }
         if (id.startsWith("appl_")) {
-            applianceFilter.innerHTML += `<option value="${id}"><img src="${img}" alt="${name}"> ${name}</option>`;
+            applianceFilter.innerHTML += `<option value="${id}">${name}</option>`;
         }
     });
 }
