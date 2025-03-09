@@ -59,11 +59,8 @@ async function createFilterOptions() {
     const applianceFilter = document.getElementById("applianceFilter");
 
     Object.entries(termImages).forEach(([id, { name, img }]) => {
-        if (id.startsWith("char_")) {
+        if (id.startsWith(".")) {
             characterFilter.innerHTML += `<option value="${id}">${name}</option>`;
-        }
-        if (id.startsWith("appl_")) {
-            applianceFilter.innerHTML += `<option value="${id}">${name}</option>`;
         }
     });
 }
