@@ -22,7 +22,9 @@ function displayItems(items) {
     container.innerHTML = items.map(item => {
         const characterNames = replaceIDsWithIcons(item.character.join(", "));
         const sourceText = replaceIDsWithIcons(item.source);
-        const requirementsText = replaceIDsWithIcons(Array.isArray(item.requirements) ? item.requirements.join(", ") : item.requirements);
+        const requirementsText = item.requirements 
+            ? replaceIDsWithIcons(Array.isArray(item.requirements) ? item.requirements.join(", ") : item.requirements) 
+            : "None";
         
         return `
             <div class="item-card">
@@ -58,7 +60,7 @@ async function createFilterOptions() {
 
     Object.entries(termImages).forEach(([id, { name, img }]) => {
         if (id.startsWith("char_")) {
-            characterFilter.innerHTML += `<option value="${id}"><img src="${img}" alt="${name}"> ${name}</option>`;
+            characterFilter.innerHTML += `<option value="${id}">${name}</option>`;
         }
         if (id.startsWith("appl_")) {
             applianceFilter.innerHTML += `<option value="${id}"><img src="${img}" alt="${name}"> ${name}</option>`;
