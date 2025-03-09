@@ -17,15 +17,17 @@ async function loadTermImages() {
 
 // Replace IDs with images and names
 function replaceIDsWithIcons(text) {
-    console.log("Processing text:", text);  // Log the text being passed
-    return text.replace(/\.\w+(\-\w+)*\b/g, (match) => {
-        if (termImages[match]) {
-            const { name, img } = termImages[match];
+    // Regular expression to match terms between | symbols
+    return text.replace(/\|([\w-]+)\|/g, (match, id) => {
+        // Check if the term exists in termImages
+        if (termImages[id]) {
+            const { name, img } = termImages[id];
             return `<img src="${img}" alt="${name}" style="width: 20px; vertical-align: middle;"> ${name}`;
         }
-        return match;
+        return match;  // If no match is found in termImages, return the original term
     });
 }
+
 
 function displayItems(items) {
     const container = document.getElementById("itemsContainer");
