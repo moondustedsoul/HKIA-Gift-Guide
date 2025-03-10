@@ -44,6 +44,17 @@
 
 
     "ultimate-joke-pizza": { "name": "Ultimate Joke Pizza", "img": "images/craftables/Ultimate_Joke_Pizza.png" },
+    "pineapple-pizza": { "name": "Pineapple Pizza", "img": "images/craftables/Pineapple_Pizza.png" },
+    "spinip-alfredo-pizza": { "name": "Spinip Alfredo Pizza", "img": "images/craftables/Spinip_Alfredo_Pizza.png" },
+    "surprising-soda": { "name": "Surprising Soda", "img": "images/craftables/Surprising_Soda.png" },
+    "everything-pizza": { "name": "Everything Pizza", "img": "images/craftables/Everything_Pizza.png" },
+
+
+
+    "pizza-tag": { "name": "Pizza", "img": "images/tags/Pizza_Icon.webp" },
+    "tropical-tag": { "name": "Tropical", "img": "images/tags/Tropical_Icon.webp" },
+    "rare-tag": { "name": "Rare", "img": "images/tags/Rare_Icon.png" },
+    "fish-tag": { "name": "Fish", "img": "images/tags/Fish_Icon.webp" },
 
 
 
@@ -52,7 +63,14 @@
     "tofu": { "name": "Tofu", "img": "images/sources/Tofu.png" },
     "spinip": { "name": "Spinip", "img": "images/sources/Spinip.png" },
     "coral-milk": { "name": "Coral Milk", "img": "images/sources/Coral_Milk.png" },
+    "fizzy-crystal": { "name": "Fizzy Crystal", "img": "images/sources/Fizzy_Crystal.png" },
     "toasted-almond": { "name": "Toasted Almond", "img": "images/sources/Toasted_Almond.png" },
     "flour": { "name": "Flour", "img": "images/sources/Flour.png" },
-    "rubber": { "name": "Rubber", "img": "images/sources/Rubber.png" }
+    "rubber": { "name": "Rubber", "img": "images/sources/Rubber.png" },
+    "fishing": { "name": "Fishing", "img": "images/requirements/Fishing_Rod_Icon.png" },
+    "catching": { "name": "Catching", "img": "images/requirements/Net.png" },
+
+
+
+    "dragondarter": { "name": "Dragondarter", "img": "images/creatures/Dragondarter.png" }
 }
