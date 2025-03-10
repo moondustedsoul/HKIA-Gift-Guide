@@ -22,20 +22,20 @@
     
 
 
-    "oven": { "name": "Oven", "img": "images/appliances/Oven.png" },
+    "oven": { "name": "Oven", "img": "images/appliances/Oven.png", "upgrades": ["oven-upgrade"] },
         "oven-upgrade": { "name": "Oven Upgrade", "img": "images/appliances/Oven.png" },
     "crafting-table": { "name": "Crafting Table", "img": "images/appliances/Crafting_Table.png" },
-    "espresso-machine": { "name": "Espresso Machine", "img": "images/appliances/Espresso_Machine.png" },
+    "espresso-machine": { "name": "Espresso Machine", "img": "images/appliances/Espresso_Machine.png", "upgrades": ["espresso-machine-upgrade"] },
         "espresso-machine-upgrade": { "name": "Espresso Machine Upgrade", "img": "images/appliances/Espresso_Machine.png" },
-    "soda-machine": { "name": "Soda Machine", "img": "images/appliances/Soda_Machine.png" },
+    "soda-machine": { "name": "Soda Machine", "img": "images/appliances/Soda_Machine.png", "upgrades": ["soda-machine-upgrade"] },
         "soda-machine-upgrade": { "name": "Soda Machine Upgrade", "img": "images/appliances/Soda_Machine.png" },
-    "dessert-machine": { "name": "Dessert Machine", "img": "images/appliances/Dessert_Machine.png" },
+    "dessert-machine": { "name": "Dessert Machine", "img": "images/appliances/Dessert_Machine.png", "upgrades": ["dessert-machine-upgrade"] },
         "dessert-machine-upgrade": { "name": "Dessert Machine Upgrade", "img": "images/appliances/Dessert_Machine.png" },
-    "egg-pan-station": { "name": "Egg Pan Station", "img": "images/appliances/Egg_Pan_Station.png" },
+    "egg-pan-station": { "name": "Egg Pan Station", "img": "images/appliances/Egg_Pan_Station.png", "upgrades": ["egg-pan-station-upgrade"] },
         "egg-pan-station-upgrade": { "name": "Egg Pan Station Upgrade", "img": "images/appliances/Egg_Pan_Station.png" },
-    "pizza-oven": { "name": "Pizza Oven", "img": "images/appliances/Pizza_Oven.png" },
+    "pizza-oven": { "name": "Pizza Oven", "img": "images/appliances/Pizza_Oven.png", "upgrades": ["pizza-oven-upgrade"] },
         "pizza-oven-upgrade": { "name": "Pizza Oven Upgrade", "img": "images/appliances/Pizza_Oven.png" },
-    "candy-cloud-machine": { "name": "Candy Cloud Machine", "img": "images/appliances/Candy_Cloud_Machine.png" },
+    "candy-cloud-machine": { "name": "Candy Cloud Machine", "img": "images/appliances/Candy_Cloud_Machine.png", "upgrades": ["candy-cloud-machine-upgrade"] },
         "candy-cloud-machine-upgrade": { "name": "Candy Cloud Machine Upgrade", "img": "images/appliances/Candy_Cloud_Machine.png" },
     "creation-station": { "name": "Creation Station", "img": "images/appliances/Creation_Station_Icon.png"},
     
@@ -44,7 +44,7 @@
     "ultimate-joke-pizza": { "name": "Ultimate Joke Pizza", "img": "images/craftables/Ultimate_Joke_Pizza.png" },
 
 
-    
+
     "dough": { "name": "Dough", "img": "images/sources/Dough.png" },
     "pineapple": { "name": "Pineapple", "img": "images/sources/Pineapple.png" },
     "tofu": { "name": "Tofu", "img": "images/sources/Tofu.png" },
