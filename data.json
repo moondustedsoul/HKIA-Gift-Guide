@@ -9,12 +9,93 @@
     "comments": "Great value, but it is possible to run short on |pineapple|s because |tuxedosam|'s 3-heart gift also requires them. Save up in the early game."
   },
   {
-    "item": "Healing Potion",
-    "character": ["All"],
-    "value": 50,
+    "item": "|pineapple-pizza|",
+    "character": ["|badtz-maru|"],
+    "value": 6,
+    "hearts": 2,
+    "source": "|dough| + |pineapple|",
+    "requirements": "|pizza-oven|",
+    "comments": "Best option before |pizza-oven-upgrade|."
+  },
+  {
+    "item": "|spinip-alfredo-pizza|",
+    "character": ["|badtz-maru|"],
+    "value": 6,
     "hearts": 1,
-    "source": "Herbs and enchanted water",
+    "source": "|dough| + |spinip| + |coral-milk|",
+    "requirements": "|pizza-oven-upgrade|",
+    "comments": "Use only if low on ingredients for |ultimate-joke-pizza|."
+  },
+  {
+    "item": "|surprising-soda|",
+    "character": ["|badtz-maru|"],
+    "value": 5,
+    "hearts": 1,
+    "source": "|fizzy-crystal| + |toasted-almond| + |spinip|",
+    "requirements": "|soda-machine-upgrade|",
+    "comments": "Okay option with |soda-machine-upgrade| (|pekkle| level 6). However, some ingredients may need to be saved for others' gifts."
+  },
+  {
+    "item": "|everything-pizza|",
+    "character": ["|badtz-maru|"],
+    "value": 5,
+    "hearts": 1,
+    "source": "|dough| + |spinip| + |tofu|",
+    "requirements": "|pizza-oven-upgrade|",
+    "comments": "Use only if low on ingredients for more effective pizzas."
+  },
+  {
+    "item": "|pizza-tag|s with 2 other tags",
+    "character": ["|badtz-maru|"],
+    "value": 4,
+    "hearts": 1,
+    "source": "|dough| + varies",
+    "requirements": "|pizza-oven|",
+    "comments": "Good options before |pizza-oven-upgrade| if low on |pineapple|s."
+  },
+  {
+    "item": "|tropical-tag| |rare-tag| |fish-tag|",
+    "character": ["|badtz-maru|"],
+    "value": 4,
+    "hearts": 1,
+    "source": "|fishing|",
+    "requirements": "|fishing-rod|",
+    "comments": "Cheap early options once the |fishing-rod| is unlocked (|badtz-maru|'s level 3 quest). (As a bonus, clamfish come with nearly-guaranteed |stick|.)"
+  },
+  {
+    "item": "|dragondarter|",
+    "character": ["|badtz-maru|"],
+    "value": 4,
+    "hearts": 1,
+    "source": "|catching|",
+    "requirements": "|net|",
+    "comments": "Cheap early option once the |net| is unlocked (|keroppi|'s level 2 quest)."
+  },
+  {
+    "item": "|pineapple-stack-cake|",
+    "character": ["|badtz-maru|"],
+    "value": 3,
+    "hearts": 1,
+    "source": "|flour| + |pineapple|",
+    "requirements": "|oven|",
+    "comments": "Early option, but |flour| may need to be saved for other characters' gifts very early in the game."
+  },
+  {
+    "item": "|water-balloon|",
+    "character": ["|badtz-maru|"],
+    "value": 3,
+    "hearts": 1,
+    "source": "3x |rubber|",
     "requirements": "None",
-    "comments": "Restores 3 hearts upon use."
+    "comments": "Early option, but save 10x |rubber| to make the |snorkel|."
+  },
+  {
+    "item": "|coconut|",
+    "character": ["|badtz-maru|"],
+    "value": 2,
+    "hearts": 1,
+    "source": "|seaside-resort|",
+    "requirements": "None",
+    "comments": "Basic starting option."
   }
 ]
