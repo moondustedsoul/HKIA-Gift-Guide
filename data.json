@@ -1,57 +1,84 @@
 [
   {
+    "item": "|quattro-formaggi-pizza|",
+    "character": ["|badtz-maru|"],
+    "value": 9,
+    "hearts": 1,
+    "source": "|dough| + |moon-cheese| + |coral-milk|",
+    "requirements": "|pizza-oven-upgrade|",
+    "comments": "Highest value but with late-game material."
+  },
+  {
     "item": "|ultimate-joke-pizza|",
     "character": ["|badtz-maru|"],
-    "value": 10,
+    "value": 8,
     "hearts": 3,
     "source": "|dough| + |pineapple| + |tofu|",
     "requirements": "|pizza-oven-upgrade|",
     "comments": "Great value, but it is possible to run short on |pineapple|s because |tuxedosam|'s 3-heart gift also requires them. Save up in the early game."
   },
   {
-    "item": "|pineapple-pizza|",
-    "character": ["|badtz-maru|"],
-    "value": 6,
-    "hearts": 2,
-    "source": "|dough| + |pineapple|",
-    "requirements": "|pizza-oven|",
-    "comments": "Best option before |pizza-oven-upgrade|."
-  },
-  {
     "item": "|spinip-alfredo-pizza|",
     "character": ["|badtz-maru|"],
-    "value": 6,
+    "value": 7,
     "hearts": 1,
     "source": "|dough| + |spinip| + |coral-milk|",
     "requirements": "|pizza-oven-upgrade|",
-    "comments": "Use only if low on ingredients for |ultimate-joke-pizza|."
+    "comments": "Use only if low on ingredients for |quattro-formaggi-pizza| or |ultimate-joke-pizza|."
   },
   {
-    "item": "|surprising-soda|",
+    "item": "|three-cheese-pizza|",
     "character": ["|badtz-maru|"],
-    "value": 5,
+    "value": 7,
     "hearts": 1,
-    "source": "|fizzy-crystal| + |toasted-almond| + |spinip|",
+    "source": "|dough| + |moon-cheese|",
+    "requirements": "|pizza-oven|",
+    "comments": "Decent value for material cost."
+  },
+  {
+    "item": "|pineapple-lava-soda|",
+    "character": ["|badtz-maru|"],
+    "value": 6,
+    "hearts": 1,
+    "source": "|fizzy-crystal| + |pineapple| + |magma-bloom|",
     "requirements": "|soda-machine-upgrade|",
-    "comments": "Okay option with |soda-machine-upgrade|. However, some ingredients may need to be saved for others' gifts."
+    "comments": "Great option before |pizza-oven-upgrade|."
   },
   {
-    "item": "|everything-pizza|",
+    "item": "|spicy-pizza|",
     "character": ["|badtz-maru|"],
     "value": 5,
     "hearts": 1,
-    "source": "|dough| + |spinip| + |tofu|",
-    "requirements": "|pizza-oven-upgrade|",
-    "comments": "Use only if low on ingredients for more effective pizzas."
+    "source": "|dough| + |magma-bloom| OR |dough| + |cinna-bloom|",
+    "requirements": "|pizza-oven|",
+    "comments": "Good option before |pizza-oven-upgrade|."
   },
   {
-    "item": "|pizza-tag|s with 2 other tags",
+    "item": "|pineapple-pizza|",
+    "character": ["|badtz-maru|"],
+    "value": 5,
+    "hearts": 2,
+    "source": "|dough| + |pineapple|",
+    "requirements": "|pizza-oven|",
+    "comments": "Good option before |pizza-oven-upgrade|."
+  },
+  {
+    "item": "|joke-soda|",
+    "character": ["|badtz-maru|"],
+    "value": 5,
+    "hearts": 1,
+    "source": "|fizzy-crystal| + |tofu|",
+    "requirements": "|soda-machine|",
+    "comments": "Good option before cooking station upgrades."
+  },
+  {
+    "item": "|pineapple-stack-cake|",
     "character": ["|badtz-maru|"],
     "value": 4,
     "hearts": 1,
-    "source": "|dough| + varies",
-    "requirements": "|pizza-oven|",
-    "comments": "Good options before |pizza-oven-upgrade| if low on |pineapple|s."
+    "source": "|flour| + |pineapple|",
+    "requirements": "|oven|",
+    "comments": "Good option when starting the game."
   },
   {
     "item": "|tropical-tag| |rare-tag| |fish-tag|",
@@ -60,7 +87,7 @@
     "hearts": 1,
     "source": "|fishing|",
     "requirements": "|fishing-rod|",
-    "comments": "Cheap early options once the |fishing-rod| is unlocked. (As a bonus, clamfish come with nearly-guaranteed |stick|.)"
+    "comments": "Cheap early option once the |fishing-rod| is unlocked. (As a bonus, clamfish come with nearly-guaranteed |stick|.)"
   },
   {
     "item": "|dragondarter|",
@@ -70,24 +97,6 @@
     "source": "|catching|",
     "requirements": "|net|",
     "comments": "Cheap early option once the |net| is unlocked."
-  },
-  {
-    "item": "|pineapple-stack-cake|",
-    "character": ["|badtz-maru|"],
-    "value": 3,
-    "hearts": 1,
-    "source": "|flour| + |pineapple|",
-    "requirements": "|oven|",
-    "comments": "Early option, but |flour| may need to be saved for other characters' gifts very early in the game."
-  },
-  {
-    "item": "|water-balloon|",
-    "character": ["|badtz-maru|"],
-    "value": 3,
-    "hearts": 1,
-    "source": "3x |rubber|",
-    "requirements": "|crafting-table|",
-    "comments": "Early option, but save 10x |rubber| to make the |snorkel|."
   },
   {
     "item": "|coconut|",
@@ -101,65 +110,83 @@
   {
     "item": "|interactive-history-of-chocolate|",
     "character": ["|chococat|"],
-    "value": 10,
+    "value": 7,
     "hearts": 3,
     "source": "|blank-book| + |mechanism| + |spark| + 3x |chocolate-coin|",
     "requirements": "|crafting-table|",
     "comments": "Very expensive in materials required. Unlocked at |tophat| level 3."
   },
   {
-    "item": "|ancient-inventions|",
+    "item": "|computer|",
     "character": ["|chococat|"],
     "value": 7,
+    "hearts": 1,
+    "source": "|glitch| + 2x |mechanism| + 2x |spark|",
+    "requirements": "|crafting-table|",
+    "comments": "Alternative to above. Unlocked at |chococat| level 13."
+  },
+  {
+    "item": "|ancient-inventions|",
+    "character": ["|chococat|"],
+    "value": 6,
     "hearts": 2,
     "source": "|blank-book| + |mechanism|",
     "requirements": "|crafting-table|",
     "comments": "Good value for the cost, but players may want to save up 100x |mechanism|s for |chococat|'s level 15 quest. Unlocked at |chococat| level 6."
   },
   {
-    "item": "|glitchy-book|",
+    "item": "|the-greatest-challenge|",
     "character": ["|chococat|"],
-    "value": 4,
+    "value": 6,
     "hearts": 1,
-    "source": "|blank-book| + |glitch|",
+    "source": "2x |ingot| + 2x |spark| + 2x |little-challenge|",
     "requirements": "|crafting-table|",
-    "comments": "Good alternative if low on |mechanism|s. Unlocked at |tophat| level 2."
+    "comments": "Expensive materials, but an option if low on |chocolate-coin|s and |mechanism|s. Unlocked at |lala| level 4."
   },
   {
-    "item": "|meditations-on-resilience|",
+    "item": "|chocolate-chai|",
     "character": ["|chococat|"],
-    "value": 4,
+    "value": 5,
     "hearts": 1,
-    "source": "|blank-book| + |little-challenge|",
-    "requirements": "|crafting-table|",
-    "comments": "Good alternative if low on |mechanism|s. Unlocked at |big-challenges| level 2."
+    "source": "|espresso-machine-upgrade|",
+    "requirements": "|candlenut| + |chocolate-coin| + |cinna-bloom| OR |candlenut| + |chocolate-coin| + |magma-bloom|",
+    "comments": "Alternative if low on |mechanism|s. Can obtain 1 per day from |azuki| if she is visiting."
   },
   {
     "item": "|hot-cocoa|",
     "character": ["|chococat|"],
-    "value": 4,
+    "value": 5,
     "hearts": 1,
     "source": "|candlenut| + |coral-milk| + |chocolate-coin|",
     "requirements": "|espresso-machine-upgrade|",
     "comments": "Alternative if low on |mechanism|s. |cappuccino| and |espresso| can gift 1 every day they visit."
   },
   {
-    "item": "|boulder-bits-ice-cream|",
-    "character": ["|chococat|"],
-    "value": 4,
-    "hearts": 1,
-    "source": "|cactus-cream| + |swampmallow| + |chocolate-coin|",
-    "requirements": "|dessert-machine-upgrade|",
-    "comments": "Alternative if low on |mechanism|s."
-  },
-  {
     "item": "|volcano-cake|",
     "character": ["|chococat|"],
-    "value": 4,
+    "value": 5,
     "hearts": 1,
     "source": "|flour| + |chocolate-coin| + |magma-bloom|",
     "requirements": "|oven-upgrade|",
-    "comments": "Alternative if low on |mechanism|s. Available with |oven-upgrade|."
+    "comments": "Alternative if low on |mechanism|s."
+  },
+  {
+    "item": "|meditations-on-resilience|",
+    "character": ["|chococat|"],
+    "value": 5,
+    "hearts": 1,
+    "source": "|blank-book| + |little-challenge|",
+    "requirements": "|crafting-table|",
+    "comments": "Good alternative if low on |mechanism|s. Unlocked at |big-challenges| level 2."
+  },
+  {
+    "item": "|glitchy-book|",
+    "character": ["|chococat|"],
+    "value": 5,
+    "hearts": 1,
+    "source": "|blank-book| + |glitch|",
+    "requirements": "|crafting-table|",
+    "comments": "Good alternative if low on |mechanism|s. Unlocked at |tophat| level 2."
   },
   {
     "item": "|blank-book|",
