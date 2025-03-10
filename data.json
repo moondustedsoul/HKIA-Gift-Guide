@@ -46,7 +46,7 @@
   },
   {
     "item": "|spicy-pizza|",
-    "character": ["|badtz-maru|"],
+    "character": ["|badtz-maru|, |cinnamoroll|"],
     "value": 5,
     "hearts": 1,
     "source": "|dough| + |magma-bloom| OR |dough| + |cinna-bloom|",
@@ -145,7 +145,7 @@
   },
   {
     "item": "|chocolate-chai|",
-    "character": ["|chococat|"],
+    "character": ["|chococat|", "|cinnamoroll|"],
     "value": 5,
     "hearts": 1,
     "source": "|espresso-machine-upgrade|",
@@ -159,7 +159,7 @@
     "hearts": 1,
     "source": "|candlenut| + |coral-milk| + |chocolate-coin|",
     "requirements": "|espresso-machine-upgrade|",
-    "comments": "Alternative if low on |mechanism|s. |cappuccino| and |espresso| can gift 1 every day they visit."
+    "comments": "Alternative if low on |mechanism|s. |cappuccino-char| and |espresso-char| can gift 1 every day they visit."
   },
   {
     "item": "|volcano-cake|",
@@ -196,5 +196,77 @@
     "source": "3x |paper| OR 3x |lotus-blossom|",
     "requirements": "|crafting-table|",
     "comments": "Earliest starting option. |paper| version |crafting-plans| are unlocked during \"Power Up the Gate\" quest (|chococat| level 1), which also unlocks crafting. |lotus-blossom| version |crafting-plans| are in a |treasure-chest| near the |seaside-resort| |crafting-table|."
+  },
+  {
+    "item": "|spicy-pumpkin-latte|",
+    "character": ["|cinnamoroll|"],
+    "value": 9,
+    "hearts": 0,
+    "source": "||",
+    "requirements": "||",
+    "comments": ""
+  },
+  {
+    "item": "|molten-frappe|",
+    "character": ["|cinnamoroll|"],
+    "value": 8,
+    "hearts": 0,
+    "source": "||",
+    "requirements": "||",
+    "comments": ""
+  },
+  {
+    "item": "|candied-banana-coffee|",
+    "character": ["|cinnamoroll|"],
+    "value": 7,
+    "hearts": 0,
+    "source": "||",
+    "requirements": "||",
+    "comments": ""
+  },
+  {
+    "item": "|chai|",
+    "character": ["|cinnamoroll|"],
+    "value": 6,
+    "hearts": 0,
+    "source": "||",
+    "requirements": "||",
+    "comments": ""
+  },
+  {
+    "item": "|spiced-cloud|",
+    "character": ["|cinnamoroll|"],
+    "value": 6,
+    "hearts": 0,
+    "source": "||",
+    "requirements": "||",
+    "comments": ""
+  },
+  {
+    "item": "|cinnamon-bread|",
+    "character": ["|cinnamoroll|"],
+    "value": 5,
+    "hearts": 0,
+    "source": "||",
+    "requirements": "||",
+    "comments": ""
+  },
+  {
+    "item": "|mocha|",
+    "character": ["|cinnamoroll|"],
+    "value": 4,
+    "hearts": 0,
+    "source": "||",
+    "requirements": "||",
+    "comments": ""
+  },
+  {
+    "item": "|chocolate-coin|",
+    "character": ["|cinnamoroll|"],
+    "value": 1,
+    "hearts": 0,
+    "source": "||",
+    "requirements": "||",
+    "comments": ""
   }
 ]
