@@ -15,6 +15,42 @@ async function loadTermImages() {
     }
 }
 
+function updateApplianceFilters() {
+    document.querySelectorAll("#applianceFilter input[type='checkbox']").forEach(checkbox => {
+        const applianceID = checkbox.value;
+
+        if (termImages[applianceID] && termImages[applianceID].upgrades) {
+            termImages[applianceID].upgrades.forEach(upgradeID => {
+                const upgradeCheckbox = document.querySelector(`#applianceFilter input[value="${upgradeID}"]`);
+                if (upgradeCheckbox) {
+                    const upgradeContainer = upgradeCheckbox.closest("label") || upgradeCheckbox.parentElement;
+
+                    if (checkbox.checked) {
+                        upgradeContainer.style.display = ""; // Show upgrade
+                    } else {
+                        upgradeContainer.style.display = "none"; // Fully hide the upgrade option
+                        upgradeCheckbox.checked = false; // Uncheck if hidden
+                    }
+                }
+            });
+        }
+    });
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+    loadTermImages().then(() => {
+        document.querySelectorAll("#applianceFilter input[type='checkbox']").forEach(checkbox => {
+            checkbox.addEventListener("change", updateApplianceFilters);
+        });
+
+        updateApplianceFilters(); // Hide upgrades on page load
+    });
+});
+
+// Run the function once to initialize the correct visibility
+updateApplianceFilters();
+
+
 // Replace IDs with images and names
 function replaceIDsWithIcons(text) {
     return text.replace(/\|([\w-]+)\|/g, (match, id) => {
