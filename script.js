@@ -113,11 +113,15 @@ function filterItems() {
         // Sort alphabetically by item name if no character is selected
         filteredItems.sort((a, b) => a.item.localeCompare(b.item));
     } else {
-        // Sort by highest to lowest value for the selected character
+        // Sort by highest to lowest value for the selected character, then alphabetically
         filteredItems.sort((a, b) => {
             const valueA = a.value[selectedCharacter] || 0;
             const valueB = b.value[selectedCharacter] || 0;
-            return valueB - valueA; // Descending order
+
+            if (valueB === valueA) {
+                return a.item.localeCompare(b.item); // Alphabetical order as a tiebreaker
+            }
+            return valueB - valueA; // Descending order of value
         });
     }
 
