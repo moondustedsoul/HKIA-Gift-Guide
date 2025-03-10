@@ -15,12 +15,28 @@
             <label for="characterFilter">Filter by Character:</label>
             <select id="characterFilter">
                 <option value="all">All</option>
+                <option value="|badtz-maru|">Badtz-maru</option>
+                <option value="|chococat|">Chococat</option>
+                <option value="|cinnamoroll|">Cinnamoroll</option>
+                <!-- Add all other characters here -->
             </select>
-            
+
             <label for="applianceFilter">Filter by Appliance:</label>
-            <select id="applianceFilter">
-                <option value="all">All</option>
-            </select>
+            <div id="applianceFilter">
+                <label>
+                    <input type="checkbox" value="oven"> Oven
+                </label><br>
+                <label>
+                    <input type="checkbox" value="pizza-oven"> Pizza Oven
+                </label><br>
+                <label>
+                    <input type="checkbox" value="crafting-table"> Crafting Table
+                </label><br>
+                <label>
+                    <input type="checkbox" value="espresso-machine"> Espresso Machine
+                </label><br>
+                <!-- Add all other appliances here -->
+            </div>
             
             <button onclick="filterItems()">Filter</button>
         </div>

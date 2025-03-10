@@ -54,32 +54,21 @@ function displayItems(items) {
 
 function filterItems() {
     const selectedCharacter = document.getElementById("characterFilter").value;
-    const selectedAppliance = document.getElementById("applianceFilter").value;
+    const applianceFilters = Array.from(document.querySelectorAll("#applianceFilter input[type='checkbox']:checked"))
+                                  .map(checkbox => checkbox.value);
+
     if (!database.length) return console.error("Database is not loaded yet!");
 
     const filteredItems = database.filter(item =>
         (selectedCharacter === "all" || item.character.includes(selectedCharacter)) &&
-        (selectedAppliance === "all" || item.requirements.includes(selectedAppliance))
+        (applianceFilters.length === 0 || applianceFilters.some(appliance => item.requirements.includes(appliance)))
     );
 
     displayItems(filteredItems);
 }
 
-async function createFilterOptions() {
-    await loadTermImages();
-    const characterFilter = document.getElementById("characterFilter");
-    const applianceFilter = document.getElementById("applianceFilter");
-
-    Object.entries(termImages).forEach(([id, { name, img }]) => {
-        if (id.startsWith("|")) {
-            characterFilter.innerHTML += `<option value="${id}">${name}</option>`;
-        }
-    });
-}
-
 // Load database and terms, then display items
 async function loadDatabase() {
-    await createFilterOptions();
     database = await fetch('data.json').then(res => res.json());
     displayItems(database);
 }
