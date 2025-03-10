@@ -62,6 +62,7 @@ function replaceIDsWithIcons(text) {
 }
 
 function displayItems(items) {
+    const selectedCharacter = document.getElementById("characterFilter").value;
     const container = document.getElementById("itemsContainer");
     container.innerHTML = items.map(item => {
         const characterNames = replaceIDsWithIcons(item.character.join(", "));
@@ -70,12 +71,16 @@ function displayItems(items) {
             ? replaceIDsWithIcons(Array.isArray(item.requirements) ? item.requirements.join(", ") : item.requirements)
             : "None";
 
+        // Display value & hearts only if a specific character is selected
+        let valueText = selectedCharacter !== "all" ? (item.value[selectedCharacter] || "N/A") : "Select a character";
+        let heartsText = selectedCharacter !== "all" ? (item.hearts[selectedCharacter] || "N/A") : "Select a character";
+
         return `
             <div class="item-card">
                 <h3>${replaceIDsWithIcons(item.item)}</h3>
                 <p><strong>Character:</strong> ${characterNames}</p>
-                <p><strong>Value:</strong> ${item.value}</p>
-                <p><strong>Hearts:</strong> ${item.hearts}</p>
+                <p><strong>Value:</strong> ${valueText}</p>
+                <p><strong>Hearts:</strong> ${heartsText}</p>
                 <p><strong>Source:</strong> ${sourceText}</p>
                 <p><strong>Requirements:</strong> ${requirementsText}</p>
                 <p><strong>Comments:</strong> ${replaceIDsWithIcons(item.comments)}</p>
