@@ -19,7 +19,7 @@
     "lala": { "name": "Lala", "img": "images/characters/Lala_Icon.webp" },
     "kiki": { "name": "Kiki", "img": "images/characters/Kiki_Icon.webp" },
     "usahana": { "name": "Usahana", "img": "images/characters/Usahana_Icon.webp" },
-    
+
 
 
     "oven": { "name": "Oven", "img": "images/requirements/Oven.png", "upgrades": ["oven-upgrade"] },
@@ -48,6 +48,9 @@
     "spinip-alfredo-pizza": { "name": "Spinip Alfredo Pizza", "img": "images/craftables/Spinip_Alfredo_Pizza.png" },
     "surprising-soda": { "name": "Surprising Soda", "img": "images/craftables/Surprising_Soda.png" },
     "everything-pizza": { "name": "Everything Pizza", "img": "images/craftables/Everything_Pizza.png" },
+    "pineapple-stack-cake": { "name": "Pineapple Stack Cake", "img": "images/craftables/Pineapple_Stack_Cake.png" },
+    "water-balloon": { "name": "Water Balloon", "img": "images/craftables/Water_Balloon.png" },
+    "snorkel": { "name": "Snorkel", "img": "images/craftables/Snorkel.webp" },
 
 
 
@@ -58,6 +61,14 @@
 
 
 
+    "seaside-resort": { "name": "Seaside Resort", "img": "images/sources/Seaside_Resort_Icon.png" },
+    "spooky-swamp": { "name": "Spooky Swamp", "img": "images/sources/Spooky_Swamp_Icon.png" },
+    "rainbow-reef": { "name": "Rainbow Reef", "img": "images/sources/Rainbow_Reef_Icon.png" },
+    "gemstone-mountain": { "name": "Gemstone Mountain", "img": "images/sources/Gemstone_Mountain_Icon.png" },
+    "mount-hothead": { "name": "Mount Hothead", "img": "images/sources/Mount_Hothead_Icon.png" },
+    "merry-meadow": { "name": "Merry Meadow", "img": "images/sources/Merry_Meadow_Icon.webp" },
+    "icy-peak": { "name": "Icy Peak", "img": "images/sources/Icy_Peak.png" },
+    "cloud-island": { "name": "Cloud Island", "img": "images/sources/Cloud_Island_Icon.png" },
     "dough": { "name": "Dough", "img": "images/sources/Dough.png" },
     "pineapple": { "name": "Pineapple", "img": "images/sources/Pineapple.png" },
     "tofu": { "name": "Tofu", "img": "images/sources/Tofu.png" },
@@ -69,6 +80,7 @@
     "rubber": { "name": "Rubber", "img": "images/sources/Rubber.png" },
     "fishing": { "name": "Fishing", "img": "images/requirements/Fishing_Rod_Icon.png" },
     "catching": { "name": "Catching", "img": "images/requirements/Net.png" },
+    "coconut": { "name": "Coconut", "img": "images/sources/Coconut.png" },
 
 
 
