@@ -24,6 +24,7 @@
 
     "cappuccino": { "name": "Cappuccino", "img": "images/visitors/Cappuccino.webp" },
     "espresso": { "name": "Espresso", "img": "images/visitors/Espresso.webp" },
+    "azuki": { "name": "Azuki", "img": "images/visitors/Azuki_Icon.webp" },
 
 
 
@@ -48,13 +49,15 @@
     
 
 
+    "quattro-formaggi-pizza": { "name": "Quattro Formaggi Pizza", "img": "images/craftables/Quattro_Formaggi_Pizza.png" },
     "ultimate-joke-pizza": { "name": "Ultimate Joke Pizza", "img": "images/craftables/Ultimate_Joke_Pizza.png" },
-    "pineapple-pizza": { "name": "Pineapple Pizza", "img": "images/craftables/Pineapple_Pizza.png" },
     "spinip-alfredo-pizza": { "name": "Spinip Alfredo Pizza", "img": "images/craftables/Spinip_Alfredo_Pizza.png" },
-    "surprising-soda": { "name": "Surprising Soda", "img": "images/craftables/Surprising_Soda.png" },
-    "everything-pizza": { "name": "Everything Pizza", "img": "images/craftables/Everything_Pizza.png" },
+    "three-cheese-pizza": { "name": "Three Cheese Pizza", "img": "images/craftables/Three_Cheese_Pizza.png" },
+    "pineapple-lava-soda": { "name": "Pineapple Lava Soda", "img": "images/craftables/Pineapple_Lava_Soda.png" },
+    "spicy-pizza": { "name": "Spicy Pizza", "img": "images/craftables/Spicy_Pizza.png" },
+    "pineapple-pizza": { "name": "Pineapple Pizza", "img": "images/craftables/Pineapple_Pizza.png" },
+    "joke-soda": { "name": "Joke Soda", "img": "images/craftables/Joke_Soda.png" },
     "pineapple-stack-cake": { "name": "Pineapple Stack Cake", "img": "images/craftables/Pineapple_Stack_Cake.png" },
-    "water-balloon": { "name": "Water Balloon", "img": "images/craftables/Water_Balloon.png" },
     "snorkel": { "name": "Snorkel", "img": "images/craftables/Snorkel.webp" },
     "interactive-history-of-chocolate": { "name": "Interactive History of Chocolate", "img": "images/craftables/Interactive_History_of_Chocolate.png" },
     "ancient-inventions": { "name": "Ancient Inventions", "img": "images/craftables/Ancient_Inventions.png" },
@@ -66,6 +69,10 @@
     "blank-book": { "name": "Blank Book", "img": "images/craftables/Blank_Book.png" },
     "mechanism": { "name": "Mechanism", "img": "images/craftables/Mechanism.png" },
     "spark": { "name": "Spark", "img": "images/craftables/Spark.png" },
+    "computer": { "name": "Computer", "img": "images/craftables/Computer.png" },
+    "the-greatest-challenge": { "name": "The Greatest Challenge", "img": "images/craftables/The_Greatest_Challenge.png" },
+    "ingot": { "name": "Ingot", "img": "images/craftables/Ingot.png" },
+    "chocolate-chai": { "name": "Chocolate Chai", "img": "images/craftables/Chocolate_Chai.png" },
 
 
 
@@ -107,6 +114,9 @@
     "lotus-blossom": { "name": "Lotus Blossom", "img": "images/sources/Lotus_Blossom.png" },
     "crafting-plans": { "name": "Crafting Plans", "img": "images/sources/Crafting_Plans_Icon.png" },
     "treasure-chest": { "name": "Treasure Chest", "img": "images/sources/Treasure_Chest_Icon.png" },
+    "moon-cheese": { "name": "Moon Cheese", "img": "images/sources/Moon_Cheese.png" },
+    "stick": { "name": "Stick", "img": "images/sources/Stick.png" },
+    "cinna-bloom": { "name": "Cinna Bloom", "img": "images/sources/Cinna_Bloom.png" },
 
 
 
