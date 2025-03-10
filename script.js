@@ -56,17 +56,49 @@ function filterItems() {
 
     if (!database.length) return console.error("Database is not loaded yet!");
 
-    const filteredItems = database.filter(item =>
-        (selectedCharacter === "all" || item.character.includes(selectedCharacter)) &&
-        (applianceFilters.length === 0 || applianceFilters.some(appliance => item.requirements.includes(appliance)))
-    );
+    const filteredItems = database.filter(item => {
+        // Check if the selected character matches
+        const characterMatch = selectedCharacter === "all" || item.character.includes(selectedCharacter);
+
+        // Check if the item requires any appliances and if so, matches any of the selected ones
+        const appliancesMatch = applianceFilters.length === 0 || item.requirements === "None" || applianceFilters.some(appliance => 
+            item.requirements.includes(`|${appliance}|`)
+        );
+
+        return characterMatch && appliancesMatch;
+    });
 
     displayItems(filteredItems);
 }
 
+// Populate the filter UI (dropdown and checkboxes) with character and appliance names
+async function createFilterOptions() {
+    const characterFilter = document.getElementById("characterFilter");
+    const applianceFilter = document.getElementById("applianceFilter");
+
+    // Add characters to character filter
+    Object.entries(termImages).forEach(([id, { name }]) => {
+        if (id.startsWith("|") && id !== "|all|") {  // Avoid adding "all" as a character
+            characterFilter.innerHTML += `<option value="${id.replace(/^\|([\w-]+)\|$/, '$1')}">${name}</option>`;
+        }
+    });
+
+    // Add appliances to appliance filter checkboxes (using names from terms.json)
+    Object.entries(termImages).forEach(([id, { name }]) => {
+        if (id.startsWith("|")) {  // Only include terms that start with "|"
+            applianceFilter.innerHTML += `
+                <label>
+                    <input type="checkbox" value="${id.replace(/^\|([\w-]+)\|$/, '$1')}"> ${name}
+                </label><br>
+            `;
+        }
+    });
+}
+
 // Load database and terms, then display items
 async function loadDatabase() {
-    await loadTermImages(); // Wait for terms.json to load
+    await loadTermImages();  // Ensure terms.json is loaded first
+    await createFilterOptions();  // Create filter options after loading termImages
     database = await fetch('data.json').then(res => res.json());
     displayItems(database);
 }
