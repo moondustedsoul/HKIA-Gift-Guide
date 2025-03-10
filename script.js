@@ -17,17 +17,14 @@ async function loadTermImages() {
 
 // Replace IDs with images and names
 function replaceIDsWithIcons(text) {
-    // Regular expression to match terms between | symbols
     return text.replace(/\|([\w-]+)\|/g, (match, id) => {
-        // Check if the term exists in termImages
         if (termImages[id]) {
             const { name, img } = termImages[id];
             return `<img src="${img}" alt="${name}" style="width: 20px; vertical-align: middle;"> ${name}`;
         }
-        return match;  // If no match is found in termImages, return the original term
+        return match; // If no match is found in termImages, return the original term
     });
 }
-
 
 function displayItems(items) {
     const container = document.getElementById("itemsContainer");
@@ -69,6 +66,7 @@ function filterItems() {
 
 // Load database and terms, then display items
 async function loadDatabase() {
+    await loadTermImages(); // Wait for terms.json to load
     database = await fetch('data.json').then(res => res.json());
     displayItems(database);
 }
