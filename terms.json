@@ -22,8 +22,8 @@
 
 
 
-    "cappuccino": { "name": "Cappuccino", "img": "images/visitors/Cappuccino.webp" },
-    "espresso": { "name": "Espresso", "img": "images/visitors/Espresso.webp" },
+    "cappuccino-char": { "name": "Cappuccino", "img": "images/visitors/Cappuccino.webp" },
+    "espresso-char": { "name": "Espresso", "img": "images/visitors/Espresso.webp" },
     "azuki": { "name": "Azuki", "img": "images/visitors/Azuki_Icon.webp" },
 
 
