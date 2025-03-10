@@ -15,13 +15,13 @@ async function loadTermImages() {
     }
 }
 
-function updateApplianceFilters() {
-    document.querySelectorAll("#applianceFilter input[type='checkbox']").forEach(checkbox => {
-        const applianceID = checkbox.value;
+function updateRequirementFilters() {
+    document.querySelectorAll("#requirementFilter input[type='checkbox']").forEach(checkbox => {
+        const requirementID = checkbox.value;
 
-        if (termImages[applianceID] && termImages[applianceID].upgrades) {
-            termImages[applianceID].upgrades.forEach(upgradeID => {
-                const upgradeCheckbox = document.querySelector(`#applianceFilter input[value="${upgradeID}"]`);
+        if (termImages[requirementID] && termImages[requirementID].upgrades) {
+            termImages[requirementID].upgrades.forEach(upgradeID => {
+                const upgradeCheckbox = document.querySelector(`#requirementFilter input[value="${upgradeID}"]`);
                 if (upgradeCheckbox) {
                     const upgradeContainer = upgradeCheckbox.closest("label") || upgradeCheckbox.parentElement;
 
@@ -39,17 +39,16 @@ function updateApplianceFilters() {
 
 document.addEventListener("DOMContentLoaded", () => {
     loadTermImages().then(() => {
-        document.querySelectorAll("#applianceFilter input[type='checkbox']").forEach(checkbox => {
-            checkbox.addEventListener("change", updateApplianceFilters);
+        document.querySelectorAll("#requirementFilter input[type='checkbox']").forEach(checkbox => {
+            checkbox.addEventListener("change", updateRequirementFilters);
         });
 
-        updateApplianceFilters(); // Hide upgrades on page load
+        updateRequirementFilters(); // Hide upgrades on page load
     });
 });
 
 // Run the function once to initialize the correct visibility
-updateApplianceFilters();
-
+updateRequirementFilters();
 
 // Replace IDs with images and names
 function replaceIDsWithIcons(text) {
@@ -87,7 +86,7 @@ function displayItems(items) {
 
 function filterItems() {
     const selectedCharacter = document.getElementById("characterFilter").value;
-    const applianceFilters = Array.from(document.querySelectorAll("#applianceFilter input[type='checkbox']:checked"))
+    const requirementFilters = Array.from(document.querySelectorAll("#requirementFilter input[type='checkbox']:checked"))
                                   .map(checkbox => checkbox.value);
 
     if (!database.length) return console.error("Database is not loaded yet!");
@@ -96,21 +95,21 @@ function filterItems() {
         // Check if the selected character matches
         const characterMatch = selectedCharacter === "all" || item.character.includes(selectedCharacter);
 
-        // Check if the item requires any appliances and if so, matches any of the selected ones
-        const appliancesMatch = applianceFilters.length === 0 || item.requirements === "None" || applianceFilters.some(appliance => 
-            item.requirements.includes(`|${appliance}|`)
+        // Check if the item requires any requirements and if so, matches any of the selected ones
+        const requirementsMatch = requirementFilters.length === 0 || item.requirements === "None" || requirementFilters.some(requirement => 
+            item.requirements.includes(`|${requirement}|`)
         );
 
-        return characterMatch && appliancesMatch;
+        return characterMatch && requirementsMatch;
     });
 
     displayItems(filteredItems);
 }
 
-// Populate the filter UI (dropdown and checkboxes) with character and appliance names
+// Populate the filter UI (dropdown and checkboxes) with character and requirement names
 async function createFilterOptions() {
     const characterFilter = document.getElementById("characterFilter");
-    const applianceFilter = document.getElementById("applianceFilter");
+    const requirementFilter = document.getElementById("requirementFilter");
 
     // Add characters to character filter
     Object.entries(termImages).forEach(([id, { name }]) => {
@@ -119,10 +118,10 @@ async function createFilterOptions() {
         }
     });
 
-    // Add appliances to appliance filter checkboxes (using names from terms.json)
+    // Add requirements to requirement filter checkboxes (using names from terms.json)
     Object.entries(termImages).forEach(([id, { name }]) => {
         if (id.startsWith("|")) {  // Only include terms that start with "|"
-            applianceFilter.innerHTML += `
+            requirementFilter.innerHTML += `
                 <label>
                     <input type="checkbox" value="${id.replace(/^\|([\w-]+)\|$/, '$1')}"> ${name}
                 </label><br>

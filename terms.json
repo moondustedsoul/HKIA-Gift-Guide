@@ -22,22 +22,24 @@
     
 
 
-    "oven": { "name": "Oven", "img": "images/appliances/Oven.png", "upgrades": ["oven-upgrade"] },
-        "oven-upgrade": { "name": "Oven Upgrade", "img": "images/appliances/Oven.png" },
-    "crafting-table": { "name": "Crafting Table", "img": "images/appliances/Crafting_Table.png" },
-    "espresso-machine": { "name": "Espresso Machine", "img": "images/appliances/Espresso_Machine.png", "upgrades": ["espresso-machine-upgrade"] },
-        "espresso-machine-upgrade": { "name": "Espresso Machine Upgrade", "img": "images/appliances/Espresso_Machine.png" },
-    "soda-machine": { "name": "Soda Machine", "img": "images/appliances/Soda_Machine.png", "upgrades": ["soda-machine-upgrade"] },
-        "soda-machine-upgrade": { "name": "Soda Machine Upgrade", "img": "images/appliances/Soda_Machine.png" },
-    "dessert-machine": { "name": "Dessert Machine", "img": "images/appliances/Dessert_Machine.png", "upgrades": ["dessert-machine-upgrade"] },
-        "dessert-machine-upgrade": { "name": "Dessert Machine Upgrade", "img": "images/appliances/Dessert_Machine.png" },
-    "egg-pan-station": { "name": "Egg Pan Station", "img": "images/appliances/Egg_Pan_Station.png", "upgrades": ["egg-pan-station-upgrade"] },
-        "egg-pan-station-upgrade": { "name": "Egg Pan Station Upgrade", "img": "images/appliances/Egg_Pan_Station.png" },
-    "pizza-oven": { "name": "Pizza Oven", "img": "images/appliances/Pizza_Oven.png", "upgrades": ["pizza-oven-upgrade"] },
-        "pizza-oven-upgrade": { "name": "Pizza Oven Upgrade", "img": "images/appliances/Pizza_Oven.png" },
-    "candy-cloud-machine": { "name": "Candy Cloud Machine", "img": "images/appliances/Candy_Cloud_Machine.png", "upgrades": ["candy-cloud-machine-upgrade"] },
-        "candy-cloud-machine-upgrade": { "name": "Candy Cloud Machine Upgrade", "img": "images/appliances/Candy_Cloud_Machine.png" },
-    "creation-station": { "name": "Creation Station", "img": "images/appliances/Creation_Station_Icon.png"},
+    "oven": { "name": "Oven", "img": "images/requirements/Oven.png", "upgrades": ["oven-upgrade"] },
+        "oven-upgrade": { "name": "Oven Upgrade", "img": "images/requirements/Oven.png" },
+    "crafting-table": { "name": "Crafting Table", "img": "images/requirements/Crafting_Table.png" },
+    "espresso-machine": { "name": "Espresso Machine", "img": "images/requirements/Espresso_Machine.png", "upgrades": ["espresso-machine-upgrade"] },
+        "espresso-machine-upgrade": { "name": "Espresso Machine Upgrade", "img": "images/requirements/Espresso_Machine.png" },
+    "soda-machine": { "name": "Soda Machine", "img": "images/requirements/Soda_Machine.png", "upgrades": ["soda-machine-upgrade"] },
+        "soda-machine-upgrade": { "name": "Soda Machine Upgrade", "img": "images/requirements/Soda_Machine.png" },
+    "dessert-machine": { "name": "Dessert Machine", "img": "images/requirements/Dessert_Machine.png", "upgrades": ["dessert-machine-upgrade"] },
+        "dessert-machine-upgrade": { "name": "Dessert Machine Upgrade", "img": "images/requirements/Dessert_Machine.png" },
+    "egg-pan-station": { "name": "Egg Pan Station", "img": "images/requirements/Egg_Pan_Station.png", "upgrades": ["egg-pan-station-upgrade"] },
+        "egg-pan-station-upgrade": { "name": "Egg Pan Station Upgrade", "img": "images/requirements/Egg_Pan_Station.png" },
+    "pizza-oven": { "name": "Pizza Oven", "img": "images/requirements/Pizza_Oven.png", "upgrades": ["pizza-oven-upgrade"] },
+        "pizza-oven-upgrade": { "name": "Pizza Oven Upgrade", "img": "images/requirements/Pizza_Oven.png" },
+    "candy-cloud-machine": { "name": "Candy Cloud Machine", "img": "images/requirements/Candy_Cloud_Machine.png", "upgrades": ["candy-cloud-machine-upgrade"] },
+        "candy-cloud-machine-upgrade": { "name": "Candy Cloud Machine Upgrade", "img": "images/requirements/Candy_Cloud_Machine.png" },
+    "creation-station": { "name": "Creation Station", "img": "images/requirements/Creation_Station_Icon.png"},
+    "fishing-rod": { "name": "Fishing Rod", "img": "images/requirements/Fishing_Rod_Icon.png" },
+    "net": { "name": "Net", "img": "images/requirements/Net.png" },
     
 
 
@@ -51,8 +53,6 @@
     "spinip": { "name": "Spinip", "img": "images/sources/Spinip.png" },
     "coral-milk": { "name": "Coral Milk", "img": "images/sources/Coral_Milk.png" },
     "toasted-almond": { "name": "Toasted Almond", "img": "images/sources/Toasted_Almond.png" },
-    "fishing-rod": { "name": "Fishing Rod", "img": "images/sources/Fishing_Rod_Icon.png" },
-    "net": { "name": "Net", "img": "images/sources/Net.png" },
     "flour": { "name": "Flour", "img": "images/sources/Flour.png" },
     "rubber": { "name": "Rubber", "img": "images/sources/Rubber.png" }
 }
