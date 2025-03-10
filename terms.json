@@ -22,6 +22,11 @@
 
 
 
+    "cappuccino": { "name": "Cappuccino", "img": "images/visitors/Cappuccino.webp" },
+    "espresso": { "name": "Espresso", "img": "images/visitors/Espresso.webp" },
+
+
+
     "oven": { "name": "Oven", "img": "images/requirements/Oven.png", "upgrades": ["oven-upgrade"] },
         "oven-upgrade": { "name": "Oven Upgrade", "img": "images/requirements/Oven.png" },
     "crafting-table": { "name": "Crafting Table", "img": "images/requirements/Crafting_Table.png" },
@@ -51,6 +56,16 @@
     "pineapple-stack-cake": { "name": "Pineapple Stack Cake", "img": "images/craftables/Pineapple_Stack_Cake.png" },
     "water-balloon": { "name": "Water Balloon", "img": "images/craftables/Water_Balloon.png" },
     "snorkel": { "name": "Snorkel", "img": "images/craftables/Snorkel.webp" },
+    "interactive-history-of-chocolate": { "name": "Interactive History of Chocolate", "img": "images/craftables/Interactive_History_of_Chocolate.png" },
+    "ancient-inventions": { "name": "Ancient Inventions", "img": "images/craftables/Ancient_Inventions.png" },
+    "glitchy-book": { "name": "Glitchy Book", "img": "images/craftables/Glitchy_Book.png" },
+    "meditations-on-resilience": { "name": "Meditations on Resilience", "img": "images/craftables/Meditations_on_Resilience.png" },
+    "hot-cocoa": { "name": "Hot Cocoa", "img": "images/craftables/Hot_Cocoa.png" },
+    "boulder-bits-ice-cream": { "name": "Boulder Bits Ice Cream", "img": "images/craftables/Boulder_Bits_Ice_Cream.png" },
+    "volcano-cake": { "name": "Volcano Cake", "img": "images/craftables/Volcano_Cake.png" },
+    "blank-book": { "name": "Blank Book", "img": "images/craftables/Blank_Book.png" },
+    "mechanism": { "name": "Mechanism", "img": "images/craftables/Mechanism.png" },
+    "spark": { "name": "Spark", "img": "images/craftables/Spark.png" },
 
 
 
@@ -81,6 +96,17 @@
     "fishing": { "name": "Fishing", "img": "images/requirements/Fishing_Rod_Icon.png" },
     "catching": { "name": "Catching", "img": "images/requirements/Net.png" },
     "coconut": { "name": "Coconut", "img": "images/sources/Coconut.png" },
+    "chocolate-coin": { "name": "Chocolate Coin", "img": "images/sources/Chocolate_Coin.png" },
+    "glitch": { "name": "Glitch", "img": "images/sources/Glitch.png" },
+    "little-challenge": { "name": "Little Challenge", "img": "images/sources/Little_Challenge.png" },
+    "candlenut": { "name": "Candlenut", "img": "images/sources/Candlenut.png" },
+    "cactus-cream": { "name": "Cactus Cream", "img": "images/sources/Cactus_Cream.png" },
+    "swampmallow": { "name": "Swampmallow", "img": "images/sources/Swampmallow.png" },
+    "magma-bloom": { "name": "Magma Bloom", "img": "images/sources/Magma_Bloom.png" },
+    "paper": { "name": "Paper", "img": "images/sources/Paper.png" },
+    "lotus-blossom": { "name": "Lotus Blossom", "img": "images/sources/Lotus_Blossom.png" },
+    "crafting-plans": { "name": "Crafting Plans", "img": "images/sources/Crafting_Plans_Icon.png" },
+    "treasure-chest": { "name": "Treasure Chest", "img": "images/sources/Treasure_Chest_Icon.png" },
 
 
 
