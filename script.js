@@ -135,6 +135,7 @@ async function loadDatabase() {
     await loadTermImages();  // Ensure terms.json is loaded first
     await createFilterOptions();  // Create filter options after loading termImages
     database = await fetch('data.json').then(res => res.json());
+    database.sort((a, b) => a.item.localeCompare(b.item)); // Sort the database alphabetically by item name
     displayItems(database);
 }
 
