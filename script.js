@@ -96,17 +96,30 @@ function filterItems() {
 
     if (!database.length) return console.error("Database is not loaded yet!");
 
-    const filteredItems = database.filter(item => {
+    let filteredItems = database.filter(item => {
         // Check if the selected character matches
         const characterMatch = selectedCharacter === "all" || item.character.includes(selectedCharacter);
 
-        // Check if the item requires any requirements and if so, matches any of the selected ones
+        // Check if the item meets any selected requirements
         const requirementsMatch = requirementFilters.length === 0 || item.requirements === "None" || requirementFilters.some(requirement => 
             item.requirements.includes(`|${requirement}|`)
         );
 
         return characterMatch && requirementsMatch;
     });
+
+    // Sorting logic
+    if (selectedCharacter === "all") {
+        // Sort alphabetically by item name if no character is selected
+        filteredItems.sort((a, b) => a.item.localeCompare(b.item));
+    } else {
+        // Sort by highest to lowest value for the selected character
+        filteredItems.sort((a, b) => {
+            const valueA = a.value[selectedCharacter] || 0;
+            const valueB = b.value[selectedCharacter] || 0;
+            return valueB - valueA; // Descending order
+        });
+    }
 
     displayItems(filteredItems);
 }
