@@ -1,8 +1,12 @@
   {
     "item": "||",
     "character": ["||"],
-    "value": ,
-    "hearts": ,
+    "value": {
+      "||": 
+    },
+    "hearts": {
+      "||": 
+    },
     "source": "||",
     "requirements": "||",
     "comments": ""
