@@ -364,7 +364,7 @@
       "|cinnamoroll|": 1
     },
     "source": "|flour| + |magma-bloom| OR |flour| + |cinna-bloom|",
-    "requirements": "||",
+    "requirements": "|oven|",
     "comments": "Good early-game option."
   },
   {
