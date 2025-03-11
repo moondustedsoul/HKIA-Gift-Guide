@@ -25,6 +25,8 @@
     "cappuccino-char": { "name": "Cappuccino", "img": "images/visitors/Cappuccino.webp" },
     "espresso-char": { "name": "Espresso", "img": "images/visitors/Espresso.webp" },
     "azuki": { "name": "Azuki", "img": "images/visitors/Azuki_Icon.webp" },
+    "mocha-char": { "name": "Mocha", "img": "images/visitors/Mocha_Icon.webp" },
+    "chiffon": { "name": "Chiffon", "img": "images/visitors/Chiffon.webp" },
 
 
 
@@ -73,6 +75,13 @@
     "the-greatest-challenge": { "name": "The Greatest Challenge", "img": "images/craftables/The_Greatest_Challenge.png" },
     "ingot": { "name": "Ingot", "img": "images/craftables/Ingot.png" },
     "chocolate-chai": { "name": "Chocolate Chai", "img": "images/craftables/Chocolate_Chai.png" },
+    "spicy-pumpkin-latte": { "name": "Spicy Pumpkin Latte", "img": "images/craftables/Spicy_Pumpkin_Latte.png" },
+    "molten-frappe": { "name": "Molten Frappe", "img": "images/craftables/Molten_Frappe.png" },
+    "candied-banana-coffee": { "name": "Candied Banana Coffee", "img": "images/craftables/Candied_Banana_Coffee.png" },
+    "chai": { "name": "Chai", "img": "images/craftables/Chai.png" },
+    "spiced-cloud": { "name": "Spiced Cloud", "img": "images/craftables/Spiced_Cloud.png" },
+    "cinnamon-bread": { "name": "Cinnamon Bread", "img": "images/craftables/Cinnamon_Bread.png" },
+    "mocha": { "name": "Mocha", "img": "images/craftables/Mocha.png" },
 
 
 
@@ -117,6 +126,10 @@
     "moon-cheese": { "name": "Moon Cheese", "img": "images/sources/Moon_Cheese.png" },
     "stick": { "name": "Stick", "img": "images/sources/Stick.png" },
     "cinna-bloom": { "name": "Cinna Bloom", "img": "images/sources/Cinna_Bloom.png" },
+    "pumpkin": { "name": "Pumpkin", "img": "images/sources/Pumpkin.png" },
+    "snowcicle": { "name": "Snowcicle", "img": "images/sources/Snowcicle.png" },
+    "banana": { "name": "Banana", "img": "images/sources/Banana.png" },
+    "candy-cloud": { "name": "Candy Cloud", "img": "images/sources/Candy_Cloud.png" },
 
 
 
