@@ -51,6 +51,15 @@ function replaceIDsWithIcons(text) {
 }
 
 function getCharacterValueHeartsTable(item) {
+    const selectedCharacter = document.getElementById("characterFilter").value;
+
+    // Sort characters: selected character first, then the rest alphabetically
+    const sortedCharacters = [...item.character].sort((a, b) => {
+        if (a === selectedCharacter) return -1;
+        if (b === selectedCharacter) return 1;
+        return a.localeCompare(b);
+    });
+
     let tableHTML = `<table class="character-table">
         <tr>
             <th>Character</th>
@@ -58,7 +67,7 @@ function getCharacterValueHeartsTable(item) {
             <th>Hearts</th>
         </tr>`;
 
-    item.character.forEach(char => {
+    sortedCharacters.forEach(char => {
         const value = item.value[char] || 0;
         const hearts = item.hearts[char] || 0;
         const heartIcons = hearts > 0 
