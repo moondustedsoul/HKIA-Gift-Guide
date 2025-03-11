@@ -54,12 +54,12 @@ function displayItems(items) {
     document.getElementById("itemsContainer").innerHTML = items.map(item => `
         <div class="item-card">
             <h3>${replaceIDsWithIcons(item.item)}</h3>
-            <p><strong>Character:</strong> ${replaceIDsWithIcons(item.character.join(", "))}</p>
+            <p><strong>Character(s):</strong> ${replaceIDsWithIcons(item.character.join(", "))}</p>
             <p><strong>Value:</strong> ${getValueText(item)}</p>
             <p><strong>Hearts:</strong> ${getHeartsText(item)}</p>
             <p><strong>Source:</strong> ${replaceIDsWithIcons(item.source)}</p>
-            <p><strong>Requirements:</strong> ${replaceIDsWithIcons(item.requirements || "None")}</p>
-            <p><strong>Comments:</strong> ${replaceIDsWithIcons(item.comments)}</p>
+            <p><strong>Requirement(s):</strong> ${replaceIDsWithIcons(item.requirements || "None")}</p>
+            <p><strong>Comments:</strong> ${getCommentsText(item)}</p>
         </div>`
     ).join('');
 }
@@ -74,6 +74,12 @@ function getHeartsText(item) {
     if (selectedCharacter === "all") return "Select a character";
     const hearts = item.hearts[selectedCharacter] || 0;
     return hearts > 0 ? `<span class="hearts">${'<img src="images/misc/Heart.webp" alt="heart" style="width: 16px;"> '.repeat(hearts)}</span>` : "0";
+}
+
+function getCommentsText(item) {
+    const selectedCharacter = document.getElementById("characterFilter").value;
+    if (selectedCharacter === "all") return "Select a character";
+    return replaceIDsWithIcons(item.comments[selectedCharacter] || "No comments available");
 }
 
 function filterItems() {
