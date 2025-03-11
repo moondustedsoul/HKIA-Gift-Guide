@@ -66,7 +66,7 @@
   },
   {
     "item": "|spicy-pizza|",
-    "character": ["|badtz-maru|, |cinnamoroll|"],
+    "character": ["|badtz-maru|", "|cinnamoroll|"],
     "value": {
       "|badtz-maru|": 5,
       "|cinnamoroll|": 5
@@ -75,7 +75,7 @@
       "|badtz-maru|": 1,
       "|cinnamoroll|": 1
     },
-    "source": "|dough| + |magma-bloom| OR |dough| + |cinna-bloom|",
+    "source": "|dough| + |magma-bloom|<br>or<br>|dough| + |cinna-bloom|",
     "requirements": "|pizza-oven|",
     "comments": "Good option before |pizza-oven-upgrade|."
   },
@@ -220,8 +220,8 @@
       "|chococat|": 1,
       "|cinnamoroll|": 3
     },
-    "source": "|espresso-machine-upgrade|",
-    "requirements": "|candlenut| + |chocolate-coin| + |cinna-bloom| OR |candlenut| + |chocolate-coin| + |magma-bloom|",
+    "source": "|candlenut| + |chocolate-coin| + |cinna-bloom|<br>or<br>|candlenut| + |chocolate-coin| + |magma-bloom|",
+    "requirements": "|espresso-machine-upgrade|",
     "comments": "Alternative if low on |mechanism|s. Can obtain 1 per day from |azuki| if she is visiting."
   },
   {
@@ -285,7 +285,7 @@
     "hearts": {
       "|chococat|": 1
     },
-    "source": "3x |paper| OR 3x |lotus-blossom|",
+    "source": "3x |paper|<br>or<br>3x |lotus-blossom|",
     "requirements": "|crafting-table|",
     "comments": "Earliest starting option. |paper| version |crafting-plans| are unlocked during \"Power Up the Gate\" quest (|chococat| level 1), which also unlocks crafting. |lotus-blossom| version |crafting-plans| are in a |treasure-chest| near the |seaside-resort| |crafting-table|."
   },
@@ -337,7 +337,7 @@
     "hearts": {
       "|cinnamoroll|": 2
     },
-    "source": "|candlenut| + |cinna-bloom| OR |candlenut| + |magma-bloom|",
+    "source": "|candlenut| + |cinna-bloom|<br>or<br>|candlenut| + |magma-bloom|",
     "requirements": "|espresso-machine|",
     "comments": "Best option before |espresso-machine-upgrade|."
   },
@@ -350,7 +350,7 @@
     "hearts": {
       "|cinnamoroll|": 2
     },
-    "source": "|candy-cloud| + |magma-bloom| OR |candy-cloud| + |cinna-bloom|",
+    "source": "|candy-cloud| + |magma-bloom|<br>or<br>|candy-cloud| + |cinna-bloom|",
     "requirements": "|candy-cloud-machine|",
     "comments": "Good value but late-game access."
   },
@@ -363,7 +363,7 @@
     "hearts": {
       "|cinnamoroll|": 1
     },
-    "source": "|flour| + |magma-bloom| OR |flour| + |cinna-bloom|",
+    "source": "|flour| + |magma-bloom|<br>or<br>|flour| + |cinna-bloom|",
     "requirements": "|oven|",
     "comments": "Good early-game option."
   },
