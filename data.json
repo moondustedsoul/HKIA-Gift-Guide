@@ -363,7 +363,7 @@
     "hearts": {
       "|cinnamoroll|": 1
     },
-    "source": "|flour| + |magma bloom| OR |flour| + |cinna-bloom|",
+    "source": "|flour| + |magma-bloom| OR |flour| + |cinna-bloom|",
     "requirements": "||",
     "comments": "Good early-game option."
   },
