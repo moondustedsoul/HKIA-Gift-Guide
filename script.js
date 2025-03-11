@@ -50,30 +50,59 @@ function replaceIDsWithIcons(text) {
     );
 }
 
+function getCharacterValueHeartsTable(item) {
+    let tableHTML = `<table class="character-table">
+        <tr>
+            <th>Character</th>
+            <th>Value</th>
+            <th>Hearts</th>
+        </tr>`;
+
+    item.character.forEach(char => {
+        const value = item.value[char] || 0;
+        const hearts = item.hearts[char] || 0;
+        const heartIcons = hearts > 0 
+            ? `<span class="hearts">${'<img src="images/misc/Heart.webp" alt="heart" style="width: 16px;"> '.repeat(hearts)}</span>` 
+            : "0";
+
+        tableHTML += `<tr>
+            <td>${replaceIDsWithIcons(char)}</td>
+            <td>${value}</td>
+            <td>${heartIcons}</td>
+        </tr>`;
+    });
+
+    tableHTML += `</table>`;
+    return tableHTML;
+}
+
 function displayItems(items) {
     document.getElementById("itemsContainer").innerHTML = items.map(item => `
         <div class="item-card">
             <h3>${replaceIDsWithIcons(item.item)}</h3>
-            <p><strong>Character(s):</strong> ${replaceIDsWithIcons(item.character.join(", "))}</p>
-            <p><strong>Value:</strong> ${getValueText(item)}</p>
-            <p><strong>Hearts:</strong> ${getHeartsText(item)}</p>
-            <p><strong>Source:</strong> ${replaceIDsWithIcons(item.source)}</p>
-            <p><strong>Requirement(s):</strong> ${replaceIDsWithIcons(item.requirements || "None")}</p>
-            <p><strong>Comments:</strong> ${getCommentsText(item)}</p>
+            ${getCharacterValueHeartsTable(item)}
+            <h4>Source</h4>
+            <p>${replaceIDsWithIcons(item.source)}</p>
+            <h4>Requirement(s)</h4>
+            <p>${replaceIDsWithIcons(item.requirements || "None")}</p>
+            <h4>Comments</h4>
+            <p>${getCommentsText(item)}</p>
         </div>`
     ).join('');
 }
 
 function getValueText(item) {
-    const selectedCharacter = document.getElementById("characterFilter").value;
-    return selectedCharacter === "all" ? "Select a character" : (item.value[selectedCharacter] || 0);
+    return item.character.map(char => 
+        `<strong>${replaceIDsWithIcons(char)}:</strong> ${item.value[char] || 0}`
+    ).join("<br>");
 }
 
 function getHeartsText(item) {
-    const selectedCharacter = document.getElementById("characterFilter").value;
-    if (selectedCharacter === "all") return "Select a character";
-    const hearts = item.hearts[selectedCharacter] || 0;
-    return hearts > 0 ? `<span class="hearts">${'<img src="images/misc/Heart.webp" alt="heart" style="width: 16px;"> '.repeat(hearts)}</span>` : "0";
+    return item.character.map(char => {
+        const hearts = item.hearts[char] || 0;
+        return `<strong>${replaceIDsWithIcons(char)}:</strong> ` + 
+               (hearts > 0 ? `<span class="hearts">${'<img src="images/misc/Heart.webp" alt="heart" style="width: 16px;"> '.repeat(hearts)}</span>` : "0");
+    }).join("<br>");
 }
 
 function getCommentsText(item) {
