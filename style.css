@@ -1,0 +1,147 @@
+/* Hello Kitty Island Adventure Inspired Styling */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+/* General Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #FFEAF5;
+    color: #D63384;
+    text-align: center;
+    padding: 20px;
+}
+
+h3 {
+    text-align: center;
+}
+
+/* Item Card Styling */
+#itemsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.item-card {
+    background: #FFFFFF;
+    border: 3px solid #FF99CC;
+    border-radius: 15px;
+    padding: 15px;
+    width: 280px;
+    text-align: center;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.item-card:hover {
+    transform: translateY(-5px);
+}
+
+.item-card table {
+    text-align: center;
+    width: 100%;
+}
+
+.item-card img {
+    max-width: 50px;
+    vertical-align: middle;
+}
+
+.item-card h4 {
+    margin-bottom: 0;
+}
+
+.item-card p {
+    margin-top: 0;
+}
+
+/* Dropdown Menu */
+#characterFilter {
+    background: #FFD9E6;
+    border: 2px solid #FF66B2;
+    border-radius: 10px;
+    padding: 8px;
+    font-size: 16px;
+    color: #D63384;
+    cursor: pointer;
+    outline: none;
+}
+
+#characterFilter:hover {
+    background: #FFC2DA;
+}
+
+/* Filter Button */
+button {
+    background-color: #FF66B2;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+button:hover {
+    background-color: #E0559E;
+}
+
+/* Checkbox Styling */
+#requirementFilter {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+#requirementFilter label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 16px;
+    background: #FFD9E6;
+    border: 2px solid #FF66B2;
+    border-radius: 10px;
+    padding: 8px 12px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+#requirementFilter label:hover {
+    transform: scale(1.05);
+}
+
+#requirementFilter input[type="checkbox"] {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #FF66B2;
+    border-radius: 5px;
+    display: inline-block;
+    position: relative;
+    transition: background-color 0.2s ease-in-out;
+}
+
+#requirementFilter input[type="checkbox"]:checked {
+    background-color: #FF66B2;
+}
+
+/* Checkbox Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.upgrade-checkbox {
+    display: none;
+    animation: fadeIn 0.3s ease-in-out;
+}
