@@ -10,7 +10,9 @@
     },
     "source": "|dough| + |moon-cheese| + |coral-milk|",
     "requirements": "|pizza-oven-upgrade|",
-    "comments": "Highest value but with late-game material."
+    "comments": {
+      "|badtz-maru|": "Highest value but with late-game material."
+    }
   },
   {
     "item": "|ultimate-joke-pizza|",
@@ -23,7 +25,9 @@
     },
     "source": "|dough| + |pineapple| + |tofu|",
     "requirements": "|pizza-oven-upgrade|",
-    "comments": "Great value, but it is possible to run short on |pineapple|s because |tuxedosam|'s 3-heart gift also requires them. Save up in the early game."
+    "comments": {
+      "|badtz-maru|": "Great value, but it is possible to run short on |pineapple|s because |tuxedosam|'s 3-heart gift also requires them. Save up in the early game."
+    }
   },
   {
     "item": "|spinip-alfredo-pizza|",
@@ -36,7 +40,9 @@
     },
     "source": "|dough| + |spinip| + |coral-milk|",
     "requirements": "|pizza-oven-upgrade|",
-    "comments": "Use only if low on ingredients for |quattro-formaggi-pizza| or |ultimate-joke-pizza|."
+    "comments": {
+      "|badtz-maru|": "Use only if low on ingredients for |quattro-formaggi-pizza| or |ultimate-joke-pizza|."
+    }
   },
   {
     "item": "|three-cheese-pizza|",
@@ -49,7 +55,9 @@
     },
     "source": "|dough| + |moon-cheese|",
     "requirements": "|pizza-oven|",
-    "comments": "Decent value for material cost."
+    "comments": {
+      "|badtz-maru|": "Decent value for material cost."
+    }
   },
   {
     "item": "|pineapple-lava-soda|",
@@ -62,7 +70,9 @@
     },
     "source": "|fizzy-crystal| + |pineapple| + |magma-bloom|",
     "requirements": "|soda-machine-upgrade|",
-    "comments": "Great option before |pizza-oven-upgrade|."
+    "comments": {
+      "|badtz-maru|": "Great option before |pizza-oven-upgrade|."
+    }
   },
   {
     "item": "|spicy-pizza|",
@@ -77,7 +87,10 @@
     },
     "source": "|dough| + |magma-bloom|<br>or<br>|dough| + |cinna-bloom|",
     "requirements": "|pizza-oven|",
-    "comments": "Good option before |pizza-oven-upgrade|."
+    "comments": {
+      "|badtz-maru|": "Good option before |pizza-oven-upgrade|.",
+      "|cinnamoroll|": "Good early-game option."
+    }
   },
   {
     "item": "|pineapple-pizza|",
@@ -90,7 +103,9 @@
     },
     "source": "|dough| + |pineapple|",
     "requirements": "|pizza-oven|",
-    "comments": "Good option before |pizza-oven-upgrade|."
+    "comments": {
+      "|badtz-maru|": "Good option before |pizza-oven-upgrade|."
+    }
   },
   {
     "item": "|joke-soda|",
@@ -103,7 +118,9 @@
     },
     "source": "|fizzy-crystal| + |tofu|",
     "requirements": "|soda-machine|",
-    "comments": "Good option before cooking station upgrades."
+    "comments": {
+      "|badtz-maru|": "Good option before cooking station upgrades."
+    }
   },
   {
     "item": "|pineapple-stack-cake|",
@@ -116,7 +133,9 @@
     },
     "source": "|flour| + |pineapple|",
     "requirements": "|oven|",
-    "comments": "Good option when starting the game."
+    "comments": {
+      "|badtz-maru|": "Good option when starting the game."
+    }
   },
   {
     "item": "|tropical-tag| |rare-tag| |fish-tag|",
@@ -129,7 +148,9 @@
     },
     "source": "|fishing|",
     "requirements": "|fishing-rod|",
-    "comments": "Cheap early option once the |fishing-rod| is unlocked. (As a bonus, clamfish come with nearly-guaranteed |stick|.)"
+    "comments": {
+      "|badtz-maru|": "Cheap early option once the |fishing-rod| is unlocked. (As a bonus, clamfish come with nearly-guaranteed |stick|.)"
+    }
   },
   {
     "item": "|dragondarter|",
@@ -142,7 +163,9 @@
     },
     "source": "|catching|",
     "requirements": "|net|",
-    "comments": "Cheap early option once the |net| is unlocked."
+    "comments": {
+      "|badtz-maru|": "Cheap early option once the |net| is unlocked."
+    }
   },
   {
     "item": "|coconut|",
@@ -155,7 +178,9 @@
     },
     "source": "|seaside-resort|",
     "requirements": "None",
-    "comments": "Basic starting option."
+    "comments": {
+      "|badtz-maru|": "Basic starting option."
+    }
   },
   {
     "item": "|interactive-history-of-chocolate|",
@@ -168,7 +193,9 @@
     },
     "source": "|blank-book| + |mechanism| + |spark| + 3x |chocolate-coin|",
     "requirements": "|crafting-table|",
-    "comments": "Very expensive in materials required. Unlocked at |tophat| level 3."
+    "comments": {
+      "|chococat|": "Very expensive in materials required. Unlocked at |tophat| level 3."
+    }
   },
   {
     "item": "|computer|",
@@ -181,7 +208,9 @@
     },
     "source": "|glitch| + 2x |mechanism| + 2x |spark|",
     "requirements": "|crafting-table|",
-    "comments": "Alternative to above. Unlocked at |chococat| level 13."
+    "comments": {
+      "|chococat|": "Alternative to |interactive-history-of-chocolate|. Unlocked at |chococat| level 13."
+    }
   },
   {
     "item": "|ancient-inventions|",
@@ -194,7 +223,9 @@
     },
     "source": "|blank-book| + |mechanism|",
     "requirements": "|crafting-table|",
-    "comments": "Good value for the cost, but players may want to save up 100x |mechanism|s for |chococat|'s level 15 quest. Unlocked at |chococat| level 6."
+    "comments": {
+      "|chococat|": "Good value for the cost, but players may want to save up 100x |mechanism|s for |chococat|'s level 15 quest. Unlocked at |chococat| level 6."
+    }
   },
   {
     "item": "|the-greatest-challenge|",
@@ -207,7 +238,9 @@
     },
     "source": "2x |ingot| + 2x |spark| + 2x |little-challenge|",
     "requirements": "|crafting-table|",
-    "comments": "Expensive materials, but an option if low on |chocolate-coin|s and |mechanism|s. Unlocked at |lala| level 4."
+    "comments": {
+      "|chococat|": "Expensive materials, but an option if low on |chocolate-coin|s and |mechanism|s. Unlocked at |lala| level 4."
+    }
   },
   {
     "item": "|chocolate-chai|",
@@ -222,7 +255,10 @@
     },
     "source": "|candlenut| + |chocolate-coin| + |cinna-bloom|<br>or<br>|candlenut| + |chocolate-coin| + |magma-bloom|",
     "requirements": "|espresso-machine-upgrade|",
-    "comments": "Alternative if low on |mechanism|s. Can obtain 1 per day from |azuki| if she is visiting."
+    "comments": {
+      "|chococat|": "Alternative if low on |mechanism|s. Can obtain 1 per day from |azuki| if she is visiting.",
+      "|cinnamoroll|": "3-heart gift but not highest value. Can obtain 1 per day from |azuki| if she is visiting."
+    }
   },
   {
     "item": "|hot-cocoa|",
@@ -235,7 +271,9 @@
     },
     "source": "|candlenut| + |coral-milk| + |chocolate-coin|",
     "requirements": "|espresso-machine-upgrade|",
-    "comments": "Alternative if low on |mechanism|s. |cappuccino-char| and |espresso-char| can gift 1 every day they visit."
+    "comments": {
+      "|chococat|": "Alternative if low on |mechanism|s. |cappuccino-char| and |espresso-char| can gift 1 every day they visit."
+    }
   },
   {
     "item": "|volcano-cake|",
@@ -248,7 +286,9 @@
     },
     "source": "|flour| + |chocolate-coin| + |magma-bloom|",
     "requirements": "|oven-upgrade|",
-    "comments": "Alternative if low on |mechanism|s."
+    "comments": {
+      "|chococat|": "Alternative if low on |mechanism|s."
+    }
   },
   {
     "item": "|meditations-on-resilience|",
@@ -261,7 +301,9 @@
     },
     "source": "|blank-book| + |little-challenge|",
     "requirements": "|crafting-table|",
-    "comments": "Good alternative if low on |mechanism|s. Unlocked at |big-challenges| level 2."
+    "comments": {
+      "|chococat|": "Good alternative if low on |mechanism|s. Unlocked at |big-challenges| level 2."
+    }
   },
   {
     "item": "|glitchy-book|",
@@ -274,7 +316,9 @@
     },
     "source": "|blank-book| + |glitch|",
     "requirements": "|crafting-table|",
-    "comments": "Good alternative if low on |mechanism|s. Unlocked at |tophat| level 2."
+    "comments": {
+      "|chococat|": "Good alternative if low on |mechanism|s. Unlocked at |tophat| level 2."
+    }
   },
   {
     "item": "|blank-book|",
@@ -287,7 +331,9 @@
     },
     "source": "3x |paper|<br>or<br>3x |lotus-blossom|",
     "requirements": "|crafting-table|",
-    "comments": "Earliest starting option. |paper| version |crafting-plans| are unlocked during \"Power Up the Gate\" quest (|chococat| level 1), which also unlocks crafting. |lotus-blossom| version |crafting-plans| are in a |treasure-chest| near the |seaside-resort| |crafting-table|."
+    "comments": {
+      "|chococat|": "Earliest starting option. |crafting-plans| are unlocked during \"Power Up the Gate\" quest (|chococat| level 1), or in a |treasure-chest| near the |seaside-resort| |crafting-table|."
+    }
   },
   {
     "item": "|spicy-pumpkin-latte|",
@@ -300,7 +346,9 @@
     },
     "source": "|candlenut| + |cinna-bloom| + |pumpkin|",
     "requirements": "|espresso-machine-upgrade|",
-    "comments": "Highest value and affordable material cost."
+    "comments": {
+      "|cinnamoroll|": "Highest value and affordable material cost."
+    }
   },
   {
     "item": "|molten-frappe|",
@@ -313,7 +361,9 @@
     },
     "source": "|candlenut| + |snowcicle| + |magma-bloom|",
     "requirements": "|espresso-machine-upgrade|",
-    "comments": "Good value for material cost."
+    "comments": {
+      "|cinnamoroll|": "Good value for material cost."
+    }
   },
   {
     "item": "|candied-banana-coffee|",
@@ -326,7 +376,9 @@
     },
     "source": "|candlenut| + |banana| + |candy-cloud|",
     "requirements": "|espresso-machine-upgrade|",
-    "comments": "Good value for material cost."
+    "comments": {
+      "|cinnamoroll|": "Good value for material cost."
+    }
   },
   {
     "item": "|chai|",
@@ -339,7 +391,9 @@
     },
     "source": "|candlenut| + |cinna-bloom|<br>or<br>|candlenut| + |magma-bloom|",
     "requirements": "|espresso-machine|",
-    "comments": "Best option before |espresso-machine-upgrade|."
+    "comments": {
+      "|cinnamoroll|": "Best option before |espresso-machine-upgrade|."
+    }
   },
   {
     "item": "|spiced-cloud|",
@@ -352,7 +406,9 @@
     },
     "source": "|candy-cloud| + |magma-bloom|<br>or<br>|candy-cloud| + |cinna-bloom|",
     "requirements": "|candy-cloud-machine|",
-    "comments": "Good value but late-game access."
+    "comments": {
+      "|cinnamoroll|": "Good value but late-game access."
+    }
   },
   {
     "item": "|cinnamon-bread|",
@@ -365,7 +421,9 @@
     },
     "source": "|flour| + |magma-bloom|<br>or<br>|flour| + |cinna-bloom|",
     "requirements": "|oven|",
-    "comments": "Good early-game option."
+    "comments": {
+      "|cinnamoroll|": "Good early-game option."
+    }
   },
   {
     "item": "|mocha|",
@@ -378,7 +436,9 @@
     },
     "source": "|candlenut| + |chocolate-coin|",
     "requirements": "|espresso-machine|",
-    "comments": "Option after obtaining the |snorkel|. Can obtain 1 per day each from |mocha-char| or |chiffon| if they are visiting."
+    "comments": {
+      "|cinnamoroll|": "Option after obtaining the |snorkel|. Can obtain 1 per day each from |mocha-char| or |chiffon| if they are visiting."
+    }
   },
   {
     "item": "|chocolate-coin|",
@@ -391,6 +451,8 @@
     },
     "source": "|rainbow-reef|",
     "requirements": "|snorkel|",
-    "comments": "Most basic option, but very poor value."
+    "comments": {
+      "|cinnamoroll|": "Most basic option, but very poor value."
+    }
   }
 ]
