@@ -5,13 +5,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>HKIA Interactive Gift Guide</title>
         <link rel="icon" type="image/x-icon" href="images\misc\Site-favicon.ico">
-        <style>
-            .item-card { border: 1px solid #ddd; padding: 10px; margin: 10px; width: 300px; }
-            .item-card img { max-width: 50px; vertical-align: middle; }
-        </style>
+        <link rel="stylesheet" href="style.css">
     </head>
 
     <body>
+        <header>
+            <h1>HKIA Interactive Gift Guide</h1>
+        </header>
+    
         <div>
             <label for="characterFilter">Filter by Character:</label>
             <select id="characterFilter">
@@ -36,8 +37,8 @@
                 <option value="|lala|">Lala</option>
                 <option value="|kiki|">Kiki</option>
                 <option value="|usahana|">Usahana</option>
-            </select>            
-
+            </select>
+    
             <p>Filter by Requirement:</p>
             <div id="requirementFilter">
                 <label for="oven">
@@ -94,14 +95,13 @@
                 <label>
                     <input type="checkbox" id="snorkel" name="requirement" value="snorkel"> Snorkel
                 </label><br>
-                <!-- Add all other appliances here -->
             </div>
-            
+    
             <button onclick="filterItems()">Filter</button>
         </div>
-
+    
         <div id="itemsContainer"></div>
-
+    
         <script src="script.js"></script>
-    </body>
+    </body>    
 </html>
