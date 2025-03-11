@@ -89,7 +89,7 @@
     "requirements": "|pizza-oven|",
     "comments": {
       "|badtz-maru|": "Good option before |pizza-oven-upgrade|.",
-      "|cinnamoroll|": "Good early-game option."
+      "|cinnamoroll|": "Early option obtainable without additional quests or tools."
     }
   },
   {
@@ -257,7 +257,7 @@
     "requirements": "|espresso-machine-upgrade|",
     "comments": {
       "|chococat|": "Alternative if low on |mechanism|s. Can obtain 1 per day from |azuki| if she is visiting.",
-      "|cinnamoroll|": "3-heart gift but not highest value. Can obtain 1 per day from |azuki| if she is visiting."
+      "|cinnamoroll|": "3-heart gift but not highest value. |chocolate-coin|s can be scarce due to quest requirements and gifting |chococat|. Can obtain 1 per day from |azuki| if she is visiting."
     }
   },
   {
@@ -347,7 +347,7 @@
     "source": "|candlenut| + |cinna-bloom| + |pumpkin|",
     "requirements": "|espresso-machine-upgrade|",
     "comments": {
-      "|cinnamoroll|": "Highest value and affordable material cost."
+      "|cinnamoroll|": "Good option if low on |chocolate-coin|s."
     }
   },
   {
@@ -362,7 +362,7 @@
     "source": "|candlenut| + |snowcicle| + |magma-bloom|",
     "requirements": "|espresso-machine-upgrade|",
     "comments": {
-      "|cinnamoroll|": "Good value for material cost."
+      "|cinnamoroll|": "Alternative if low on |chocolate-coin|s."
     }
   },
   {
@@ -422,7 +422,7 @@
     "source": "|flour| + |magma-bloom|<br>or<br>|flour| + |cinna-bloom|",
     "requirements": "|oven|",
     "comments": {
-      "|cinnamoroll|": "Good early-game option."
+      "|cinnamoroll|": "Early option obtainable without additional quests or tools."
     }
   },
   {
