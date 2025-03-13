@@ -34,9 +34,9 @@ function updateRequirementFilters() {
             if (upgradeCheckbox) {
                 const upgradeContainer = upgradeCheckbox.closest("label");
                 if (checkbox.checked) {
-                    upgradeContainer.style.display = "";
+                    upgradeContainer.classList.add("show");
                 } else {
-                    upgradeContainer.style.display = "none";
+                    upgradeContainer.classList.remove("show");
                     upgradeCheckbox.checked = false;
                 }
             }
