@@ -454,5 +454,110 @@
     "comments": {
       "|cinnamoroll|": "Most basic option, but very poor value."
     }
+  },
+  {
+    "item": "|mermaid-figure|",
+    "character": ["|hangyodon|"],
+    "value": {
+      "|hangyodon|": 6
+    },
+    "hearts": {
+      "|hangyodon|": 3
+    },
+    "source": "3x |pineapple| + 5x |seashell| + 2x |fabric|",
+    "requirements": "|crafting-table|",
+    "comments": {
+        "|hangyodon|": "High value but high material cost. Unlocked at |my-melody| level 13."
+    }
+  },
+  {
+    "item": "|designer-island-doll|",
+    "character": ["|hangyodon|"],
+    "value": {
+      "|hangyodon|": 6
+    },
+    "hearts": {
+      "|hangyodon|": 1
+    },
+    "source": "5x |sand-dollar| + 2x |fabric| + |gift-box|",
+    "requirements": "|crafting-table|",
+    "comments": {
+        "|hangyodon|": "High value but high material cost. Unlocked at |my-melody| level 16."
+    }
+  },
+  {
+    "item": "|aquatic-music-box|",
+    "character": ["|hangyodon|"],
+    "value": {
+      "|hangyodon|": 6
+    },
+    "hearts": {
+      "|hangyodon|": 1
+    },
+    "source": "|mechanism| + 5x |seashell| + |ingot|",
+    "requirements": "|crafting-table|",
+    "comments": {
+        "|hangyodon|": "High value but high material cost. The |crafting-plans| are in a |treasure-chest| under |chococat|'s pier."
+    }
+  },
+  {
+    "item": "|aquatic-tag| |rare-tag| |fish-tag|",
+    "character": ["|hangyodon|"],
+    "value": {
+      "|hangyodon|": 5
+    },
+    "hearts": {
+      "|hangyodon|": 2
+    },
+    "source": "|fishing|",
+    "requirements": "|fishing-rod|",
+    "comments": {
+        "|hangyodon|": "Cheap to obtain and great value; best starting option. (Also, catching any clamfish earns a |stick|.)"
+    }
+  },
+  {
+    "item": "|aquatic-material|",
+    "character": ["|hangyodon|"],
+    "value": {
+      "|hangyodon|": 5
+    },
+    "hearts": {
+      "|hangyodon|": 2
+    },
+    "source": "3x |feather| + 5x |seashell| + 2x |fabric|",
+    "requirements": "|crafting-table|",
+    "comments": {
+        "|hangyodon|": "Good value but higher material cost. The |crafting-plans| are in a |treasure-chest| above the Sunken Ship fast-travel point."
+    }
+  },
+  {
+    "item": "|aquatic-tag| |rare-tag| |critter-tag|",
+    "character": ["|hangyodon|"],
+    "value": {
+      "|hangyodon|": 4
+    },
+    "hearts": {
+      "|hangyodon|": 1
+    },
+    "source": "|catching-wand|",
+    "requirements": "|bubble-wand|",
+    "comments": {
+        "|hangyodon|": "Cheap to obtain but require the |bubble-wand|."
+    }
+  },
+  {
+    "item": "|starfish|",
+    "character": ["|hangyodon|"],
+    "value": {
+      "|hangyodon|": 2
+    },
+    "hearts": {
+      "|hangyodon|": 1
+    },
+    "source": "|rainbow-reef|",
+    "requirements": "|snorkel|",
+    "comments": {
+        "|hangyodon|": "Basic starting option for non-fishers."
+    }
   }
 ]
