@@ -83,6 +83,7 @@ button {
     font-family: 'Poppins', sans-serif;
     cursor: pointer;
     transition: background-color 0.2s ease-in-out;
+    margin: 10px;
 }
 
 button:hover {
@@ -139,9 +140,4 @@ button:hover {
         opacity: 1;
         transform: scale(1);
     }
-}
-
-.upgrade-checkbox {
-    display: none;
-    animation: fadeIn 0.3s ease-in-out;
 }
