@@ -31,17 +31,20 @@
   },
   {
     "item": "|spinip-alfredo-pizza|",
-    "character": ["|badtz-maru|"],
+    "character": ["|badtz-maru|", "|hello-kitty|"],
     "value": {
-      "|badtz-maru|": 7
+      "|badtz-maru|": 7,
+      "|hello-kitty|": 7
     },
     "hearts": {
-      "|badtz-maru|": 1
+      "|badtz-maru|": 1,
+      "|hello-kitty|": 1
     },
     "source": "|dough| + |spinip| + |coral-milk|",
     "requirements": "|pizza-oven-upgrade|",
     "comments": {
-      "|badtz-maru|": "Use only if low on ingredients for |quattro-formaggi-pizza| or |ultimate-joke-pizza|."
+      "|badtz-maru|": "Use only if low on ingredients for |quattro-formaggi-pizza| or |ultimate-joke-pizza|.",
+      "|hello-kitty|": "Decent value option with cooking station upgrades."
     }
   },
   {
@@ -109,17 +112,20 @@
   },
   {
     "item": "|joke-soda|",
-    "character": ["|badtz-maru|"],
+    "character": ["|badtz-maru|", "|kuromi|"],
     "value": {
-      "|badtz-maru|": 5
+      "|badtz-maru|": 5,
+      "|kuromi|": 5
     },
     "hearts": {
-      "|badtz-maru|": 1
+      "|badtz-maru|": 1,
+      "|kuromi|": 1
     },
     "source": "|fizzy-crystal| + |tofu|",
     "requirements": "|soda-machine|",
     "comments": {
-      "|badtz-maru|": "Good option before cooking station upgrades."
+      "|badtz-maru|": "Good option before cooking station upgrades.",
+      "|kuromi|": "Best option for early-game."
     }
   },
   {
@@ -337,17 +343,20 @@
   },
   {
     "item": "|spicy-pumpkin-latte|",
-    "character": ["|cinnamoroll|"],
+    "character": ["|cinnamoroll|", "|kuromi|"],
     "value": {
-      "|cinnamoroll|": 9
+      "|cinnamoroll|": 9,
+      "|kuromi|": 9
     },
     "hearts": {
-      "|cinnamoroll|": 2
+      "|cinnamoroll|": 2,
+      "|kuromi|": 2
     },
     "source": "|candlenut| + |cinna-bloom| + |pumpkin|",
     "requirements": "|espresso-machine-upgrade|",
     "comments": {
-      "|cinnamoroll|": "Good option if low on |chocolate-coin|s."
+      "|cinnamoroll|": "Good option if low on |chocolate-coin|s.",
+      "|kuromi|": "Highest value with good material cost."
     }
   },
   {
@@ -367,17 +376,20 @@
   },
   {
     "item": "|candied-banana-coffee|",
-    "character": ["|cinnamoroll|"],
+    "character": ["|cinnamoroll|", "|hello-kitty|"],
     "value": {
-      "|cinnamoroll|": 7
+      "|cinnamoroll|": 7,
+      "|hello-kitty|": 8
     },
     "hearts": {
-      "|cinnamoroll|": 1
+      "|cinnamoroll|": 1,
+      "|hello-kitty|": 2
     },
     "source": "|candlenut| + |banana| + |candy-cloud|",
     "requirements": "|espresso-machine-upgrade|",
     "comments": {
-      "|cinnamoroll|": "Good value for material cost."
+      "|cinnamoroll|": "Good value for material cost.",
+      "|hello-kitty|": "Great value with a very affordable material cost. Use after obtaining |espresso-machine-upgrade|."
     }
   },
   {
@@ -558,6 +570,321 @@
     "requirements": "|snorkel|",
     "comments": {
         "|hangyodon|": "Basic starting option for non-fishers."
+    }
+  },
+  {
+    "item": "|the-future-of-everything|",
+    "character": ["|hello-kitty|"],
+    "value": {
+      "|hello-kitty|": 9
+    },
+    "hearts": {
+      "|hello-kitty|": 1
+    },
+    "source": "3x |star| + 3x |little-challenge| + 3x |glitch|",
+    "requirements": "|crafting-table|",
+    "comments": {
+        "|hello-kitty|": "Highest value, but requires |star|s from |stardust|. The |crafting-plans| are in a |treasure-chest| on |cloud-island|."
+    }
+  },
+  {
+    "item": "|red-bow-apple-pie|",
+    "character": ["|hello-kitty|"],
+    "value": {
+      "|hello-kitty|": 7
+    },
+    "hearts": {
+      "|hello-kitty|": 3
+    },
+    "source": "|flour| + |apple| + |magma-bloom|",
+    "requirements": "|oven-upgrade|",
+    "comments": {
+        "|hello-kitty|": "Decent value option with |oven-upgrade|. Can obtain 1 per day each from |mary-white| if she is visiting."
+    }
+  },
+  {
+    "item": "|beignets-with-pineapple-dip|",
+    "character": ["|hello-kitty|"],
+    "value": {
+      "|hello-kitty|": 7
+    },
+    "hearts": {
+      "|hello-kitty|": 2
+    },
+    "source": "|flour| + |candy-cloud| + |pineapple|",
+    "requirements": "|oven-upgrade|",
+    "comments": {
+        "|hello-kitty|": "Decent value option with |oven-upgrade|."
+    }
+  },
+  {
+    "item": "|mamas-apple-pie|",
+    "character": ["|hello-kitty|"],
+    "value": {
+      "|hello-kitty|": 4
+    },
+    "hearts": {
+      "|hello-kitty|": 2
+    },
+    "source": "|flour| + |apple|",
+    "requirements": "|oven|",
+    "comments": {
+        "|hello-kitty|": "Good option without |oven-upgrade|. Can obtain 1 per day each from |dear-daniel| or |mimmy| if they are visiting."
+    }
+  },
+  {
+    "item": "|strawberry-shortcake|",
+    "character": ["|hello-kitty|"],
+    "value": {
+      "|hello-kitty|": 4
+    },
+    "hearts": {
+      "|hello-kitty|": 2
+    },
+    "source": "|flour| + |strawberry|",
+    "requirements": "|oven|",
+    "comments": {
+        "|hello-kitty|": "Good option without cooking station upgrades."
+    }
+  },
+  {
+    "item": "|pineapple|",
+    "character": ["|hello-kitty|"],
+    "value": {
+      "|hello-kitty|": 1
+    },
+    "hearts": {
+      "|hello-kitty|": 1
+    },
+    "source": "|seaside-resort|",
+    "requirements": "None",
+    "comments": {
+        "|hello-kitty|": "Basic starting option."
+    }
+  },
+  {
+    "item": "|swampy-music-box|",
+    "character": ["|keroppi|"],
+    "value": {
+      "|keroppi|": 6
+    },
+    "hearts": {
+      "|keroppi|": 1
+    },
+    "source": "|mechanism| + 5x |mushroom| + |ingot|",
+    "requirements": "|crafting-table|",
+    "comments": {
+        "|keroppi|": "Highest value, but a relatively costly option. The |crafting-plans| are in a |treasure-chest| near the Nature Preserve fast-travel point."
+    }
+  },
+  {
+    "item": "|bush-friend|",
+    "character": ["|keroppi|"],
+    "value": {
+      "|keroppi|": 5
+    },
+    "hearts": {
+      "|keroppi|": 2
+    },
+    "source": "|catching|",
+    "requirements": "|net|",
+    "comments": {
+        "|keroppi|": "Cheap option; can be tricky to catch."
+    }
+  },
+  {
+    "item": "|woolox|",
+    "character": ["|keroppi|"],
+    "value": {
+      "|keroppi|": 5
+    },
+    "hearts": {
+      "|keroppi|": 1
+    },
+    "source": "|catching|",
+    "requirements": "None",
+    "comments": {
+        "|keroppi|": "Cheap option but somewhat late-game."
+    }
+  },
+  {
+    "item": "|veggie-supreme-omelet|",
+    "character": ["|keroppi|"],
+    "value": {
+      "|keroppi|": 5
+    },
+    "hearts": {
+      "|keroppi|": 1
+    },
+    "source": "|egg| + |spinip| + |pumpkin|",
+    "requirements": "|egg-pan-station-upgrade|",
+    "comments": {
+        "|keroppi|": "High value after |egg-pan-station-upgrade|."
+    }
+  },
+  {
+    "item": "|critter-totem|",
+    "character": ["|keroppi|"],
+    "value": {
+      "|keroppi|": 5
+    },
+    "hearts": {
+      "|keroppi|": 3
+    },
+    "source": "|woodblock| + 3x |coconut| + 5x |mushroom|",
+    "requirements": "|crafting-table|",
+    "comments": {
+        "|keroppi|": "3-heart gift. High value but high material cost. Unlocked at |keroppi| level 10."
+    }
+  },
+  {
+    "item": "|rare-tag| |critter-tag|s",
+    "character": ["|keroppi|"],
+    "value": {
+      "|keroppi|": 4
+    },
+    "hearts": {
+      "|keroppi|": 1
+    },
+    "source": "|catching|",
+    "requirements": "|net|",
+    "comments": {
+        "|keroppi|": "Cheap option."
+    }
+  },
+  {
+    "item": "|swampy-tag| |rare-tag| |fish-tag|",
+    "character": ["|keroppi|"],
+    "value": {
+      "|keroppi|": 4
+    },
+    "hearts": {
+      "|keroppi|": 1
+    },
+    "source": "|fishing|",
+    "requirements": "|fishing-rod|",
+    "comments": {
+        "|keroppi|": "Cheap option. (Also, catching any clamfish earns a |stick|.)"
+    }
+  },
+  {
+    "item": "|woodblock|",
+    "character": ["|keroppi|"],
+    "value": {
+      "|keroppi|": 2
+    },
+    "hearts": {
+      "|keroppi|": 1
+    },
+    "source": "7x |coconut|<br>or<br>5x |stick|",
+    "requirements": "|crafting-table|",
+    "comments": {
+        "|keroppi|": "High cost for value, but a starting option. Unlocked at |keroppi| level 4."
+    }
+  },
+  {
+    "item": "|lotus-blossom|",
+    "character": ["|keroppi|"],
+    "value": {
+      "|keroppi|": 1
+    },
+    "hearts": {
+      "|keroppi|": 1
+    },
+    "source": "|spooky-swamp| and |seaside-resort|",
+    "requirements": "None",
+    "comments": {
+        "|keroppi|": "Basic starting option."
+    }
+  },
+  {
+    "item": "|pumpkin-spice-soda|",
+    "character": ["|kuromi|"],
+    "value": {
+      "|kuromi|": 8
+    },
+    "hearts": {
+      "|kuromi|": 3
+    },
+    "source": "|fizzy-crystal| + |cinna-bloom| + |pumpkin|",
+    "requirements": "|soda-machine-upgrade|",
+    "comments": {
+        "|kuromi|": "High value with good material cost. Can obtain 1 per day from |baku| if he is visiting."
+    }
+  },
+  {
+    "item": "|spooky-cake|",
+    "character": ["|kuromi|"],
+    "value": {
+      "|kuromi|": 7
+    },
+    "hearts": {
+      "|kuromi|": 2
+    },
+    "source": "|flour| + |swampmallow| + |pumpkin|",
+    "requirements": "|oven-upgrade|",
+    "comments": {
+        "|kuromi|": "Good value with good material cost."
+    }
+  },
+  {
+    "item": "|jack-o-lantern|",
+    "character": ["|kuromi|"],
+    "value": {
+      "|kuromi|": 5
+    },
+    "hearts": {
+      "|kuromi|": 2
+    },
+    "source": "5x |pumpkin|",
+    "requirements": "|crafting-table|",
+    "comments": {
+        "|kuromi|": "Cost is too high; recommended to save some |pumpkin|s for cooking instead of only crafting these. Can obtain 1 per day from |berry| if he is visiting. The |crafting-plans| are in a |treasure-chest| behind the Pumpkin Patch."
+    }
+  },
+  {
+    "item": "|pumpkin-pie|",
+    "character": ["|kuromi|"],
+    "value": {
+      "|kuromi|": 4
+    },
+    "hearts": {
+      "|kuromi|": 1
+    },
+    "source": "|flour| + |pumpkin|",
+    "requirements": "|oven|",
+    "comments": {
+        "|kuromi|": "Good option for early-game."
+    }
+  },
+  {
+    "item": "|pumpkin-pudding|",
+    "character": ["|kuromi|"],
+    "value": {
+      "|kuromi|": 4
+    },
+    "hearts": {
+      "|kuromi|": 1
+    },
+    "source": "|cactus-cream| + |pumpkin|",
+    "requirements": "|dessert-machine|",
+    "comments": {
+        "|kuromi|": "Good option for early-game."
+    }
+  },
+  {
+    "item": "|pumpkin|",
+    "character": ["|kuromi|"],
+    "value": {
+      "|kuromi|": 2
+    },
+    "hearts": {
+      "|kuromi|": 1
+    },
+    "source": "|spooky-swamp|",
+    "requirements": "None",
+    "comments": {
+        "|kuromi|": "Basic starting option."
     }
   }
 ]
