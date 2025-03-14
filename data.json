@@ -1,17 +1,20 @@
 [
   {
     "item": "|quattro-formaggi-pizza|",
-    "character": ["|badtz-maru|"],
+    "character": ["|badtz-maru|", "|my-melody|"],
     "value": {
-      "|badtz-maru|": 9
+      "|badtz-maru|": 9,
+      "|my-melody|": 9
     },
     "hearts": {
-      "|badtz-maru|": 1
+      "|badtz-maru|": 1,
+      "|my-melody|": 1
     },
     "source": "|dough| + |moon-cheese| + |coral-milk|",
     "requirements": "|pizza-oven-upgrade|",
     "comments": {
-      "|badtz-maru|": "Highest value but with late-game material."
+      "|badtz-maru|": "Highest value but with late-game material.",
+      "|my-melody|": "Highest value, but very late-game option. May need to save ingredients for |kiki| or |lala|."
     }
   },
   {
@@ -634,17 +637,20 @@
   },
   {
     "item": "|strawberry-shortcake|",
-    "character": ["|hello-kitty|"],
+    "character": ["|hello-kitty|", "|my-melody|"],
     "value": {
-      "|hello-kitty|": 4
+      "|hello-kitty|": 4,
+      "|my-melody|": 3
     },
     "hearts": {
-      "|hello-kitty|": 2
+      "|hello-kitty|": 2,
+      "|my-melody|": 1
     },
     "source": "|flour| + |strawberry|",
     "requirements": "|oven|",
     "comments": {
-        "|hello-kitty|": "Good option without cooking station upgrades."
+        "|hello-kitty|": "Good option without cooking station upgrades.",
+        "|my-melody|": "Best option in starting area."
     }
   },
   {
@@ -885,6 +891,111 @@
     "requirements": "None",
     "comments": {
         "|kuromi|": "Basic starting option."
+    }
+  },
+  {
+    "item": "|starry-skies-shake|",
+    "character": ["|my-melody|"],
+    "value": {
+      "|my-melody|": 9
+    },
+    "hearts": {
+      "|my-melody|": 1
+    },
+    "source": "|cactus-cream| + |snowcicle| + |starfruit|",
+    "requirements": "|dessert-machine-upgrade|",
+    "comments": {
+        "|my-melody|": "Highest value, but very late-game option. May need to save ingredients for |kiki| or |lala|. The recipe is in a |treasure-chest| on |cloud-island|."
+    }
+  },
+  {
+    "item": "|pink-clouds-ice-cream|",
+    "character": ["|my-melody|"],
+    "value": {
+      "|my-melody|": 8
+    },
+    "hearts": {
+      "|my-melody|": 3
+    },
+    "source": "|cactus-cream| + |candy-cloud| + |sakura|",
+    "requirements": "|dessert-machine-upgrade|",
+    "comments": {
+        "|my-melody|": "High value, but a late-game option. Can obtain 1 per day from |macaron| and |cherry| if they are visiting."
+    }
+  },
+  {
+    "item": "|strawberry-almond-galette|",
+    "character": ["|my-melody|"],
+    "value": {
+      "|my-melody|": 7
+    },
+    "hearts": {
+      "|my-melody|": 2
+    },
+    "source": "|flour| + |strawberry| + |toasted-almond|",
+    "requirements": "|oven-upgrade|",
+    "comments": {
+        "|my-melody|": "Good value for material cost with |oven-upgrade|. Can obtain 1 per day from |my-melodys-mama| if she is visiting."
+    }
+  },
+  {
+    "item": "|sweet-cloud|",
+    "character": ["|my-melody|"],
+    "value": {
+      "|my-melody|": 6
+    },
+    "hearts": {
+      "|my-melody|": 1
+    },
+    "source": "|candy-cloud| + |swampmallow|<br>or<br>|candy-cloud| + |sugarkelp|",
+    "requirements": "|candy-cloud-machine|",
+    "comments": {
+        "|my-melody|": "Decent value for material cost with |candy-cloud-machine| available."
+    }
+  },
+  {
+    "item": "|pink-cloud|",
+    "character": ["|my-melody|"],
+    "value": {
+      "|my-melody|": 6
+    },
+    "hearts": {
+      "|my-melody|": 2
+    },
+    "source": "|candy-cloud| + |strawberry|<br>or<br>|candy-cloud| + |sakura|",
+    "requirements": "|candy-cloud-machine|",
+    "comments": {
+        "|my-melody|": "Decent value for material cost with |candy-cloud-machine| available."
+    }
+  },
+  {
+    "item": "|pink-latte|",
+    "character": ["|my-melody|"],
+    "value": {
+      "|my-melody|": 4
+    },
+    "hearts": {
+      "|my-melody|": 2
+    },
+    "source": "|candlenut| + |strawberry|<br>or<br>|candlenut| + |sakura|",
+    "requirements": "|espresso-machine|",
+    "comments": {
+        "|my-melody|": "Best early option after getting the |snorkel|. (Use |strawberry|.)"
+    }
+  },
+  {
+    "item": "|strawberry|",
+    "character": ["|my-melody|"],
+    "value": {
+      "|my-melody|": 1
+    },
+    "hearts": {
+      "|my-melody|": 1
+    },
+    "source": "|pochacco|",
+    "requirements": "None",
+    "comments": {
+        "|my-melody|": "Basic starting option."
     }
   }
 ]
