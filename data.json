@@ -34,20 +34,23 @@
   },
   {
     "item": "|spinip-alfredo-pizza|",
-    "character": ["|badtz-maru|", "|hello-kitty|"],
+    "character": ["|badtz-maru|", "|hello-kitty|", "|pochacco|"],
     "value": {
       "|badtz-maru|": 7,
-      "|hello-kitty|": 7
+      "|hello-kitty|": 7,
+      "|pochacco|": 7
     },
     "hearts": {
       "|badtz-maru|": 1,
-      "|hello-kitty|": 1
+      "|hello-kitty|": 1,
+      "|pochacco|": 1
     },
     "source": "|dough| + |spinip| + |coral-milk|",
     "requirements": "|pizza-oven-upgrade|",
     "comments": {
       "|badtz-maru|": "Use only if low on ingredients for |quattro-formaggi-pizza| or |ultimate-joke-pizza|.",
-      "|hello-kitty|": "Decent value option with cooking station upgrades."
+      "|hello-kitty|": "Decent value option with cooking station upgrades.",
+      "|pochacco|": "Highest value with decent material cost."
     }
   },
   {
@@ -1104,6 +1107,171 @@
     "requirements": "None",
     "comments": {
         "|pekkle|": "Basic starting option."
+    }
+  },
+  {
+    "item": "|pochacco-energy-pop|",
+    "character": ["|pochacco|"],
+    "value": {
+      "|pochacco|": 7
+    },
+    "hearts": {
+      "|pochacco|": 3
+    },
+    "source": "|fizzy-crystal| + |tofu| + |spinip|",
+    "requirements": "|soda-machine-upgrade|",
+    "comments": {
+        "|pochacco|": "Highest value and good material cost."
+    }
+  },
+  {
+    "item": "|everything-pizza|",
+    "character": ["|pochacco|"],
+    "value": {
+      "|pochacco|": 6
+    },
+    "hearts": {
+      "|pochacco|": 2
+    },
+    "source": "|dough| + |spinip| + |tofu|",
+    "requirements": "|pizza-oven-upgrade|",
+    "comments": {
+        "|pochacco|": "High value with good material cost."
+    }
+  },
+  {
+    "item": "|veggie-crepe|",
+    "character": ["|pochacco|"],
+    "value": {
+      "|pochacco|": 6
+    },
+    "hearts": {
+      "|pochacco|": 2
+    },
+    "source": "|egg| + |flour| + |spinip|<br>or<br>|egg| + |flour| + |pumpkin|",
+    "requirements": "|egg-pan-station-upgrade|",
+    "comments": {
+        "|pochacco|": "High value but requires the use of an |egg|."
+    }
+  },
+  {
+    "item": "|tofu-bread|",
+    "character": ["|pochacco|"],
+    "value": {
+      "|pochacco|": 4
+    },
+    "hearts": {
+      "|pochacco|": 1
+    },
+    "source": "|flour| + |tofu|",
+    "requirements": "|oven|",
+    "comments": {
+        "|pochacco|": "Decent value and good starting area option."
+    }
+  },
+  {
+    "item": "|veggie-bread|",
+    "character": ["|pochacco|"],
+    "value": {
+      "|pochacco|": 4
+    },
+    "hearts": {
+      "|pochacco|": 1
+    },
+    "source": "|flour| + |spinip|",
+    "requirements": "|oven|",
+    "comments": {
+        "|pochacco|": "Decent value and early-game option. Can obtain 1 per day from |my-melodys-papa| if he is visiting."
+    }
+  },
+  {
+    "item": "|tofu-pudding|",
+    "character": ["|pochacco|"],
+    "value": {
+      "|pochacco|": 4
+    },
+    "hearts": {
+      "|pochacco|": 1
+    },
+    "source": "|cactus-cream| + |tofu|",
+    "requirements": "|dessert-machine|",
+    "comments": {
+        "|pochacco|": "Decent value and early-game option."
+    }
+  },
+  {
+    "item": "|purple-pudding|",
+    "character": ["|pochacco|"],
+    "value": {
+      "|pochacco|": 4
+    },
+    "hearts": {
+      "|pochacco|": 1
+    },
+    "source": "|cactus-cream| + |spinip|",
+    "requirements": "|dessert-machine|",
+    "comments": {
+        "|pochacco|": "Decent value and early-game option."
+    }
+  },
+  {
+    "item": "|tofu-pizza|",
+    "character": ["|pochacco|"],
+    "value": {
+      "|pochacco|": 4
+    },
+    "hearts": {
+      "|pochacco|": 1
+    },
+    "source": "|dough| + |tofu|",
+    "requirements": "|pizza-oven|",
+    "comments": {
+        "|pochacco|": "Decent value and early-game option."
+    }
+  },
+  {
+    "item": "|veggie-pizza|",
+    "character": ["|pochacco|"],
+    "value": {
+      "|pochacco|": 4
+    },
+    "hearts": {
+      "|pochacco|": 1
+    },
+    "source": "|dough| + |spinip|<br>or<br>|dough| + |pumpkin|",
+    "requirements": "|pizza-oven|",
+    "comments": {
+        "|pochacco|": "Decent value and early-game option."
+    }
+  },
+  {
+    "item": "|purple-latte|",
+    "character": ["|pochacco|"],
+    "value": {
+      "pochacco||": 4
+    },
+    "hearts": {
+      "|pochacco|": 1
+    },
+    "source": "|candlenut| + |spinip|",
+    "requirements": "|espresso-machine|",
+    "comments": {
+        "|pochacco|": "Decent value and early-game option."
+    }
+  },
+  {
+    "item": "|tofu|",
+    "character": ["|pochacco|"],
+    "value": {
+      "|pochacco|": 2
+    },
+    "hearts": {
+      "|pochacco|": 1
+    },
+    "source": "|hello-kitty|",
+    "requirements": "None",
+    "comments": {
+        "|pochacco|": "Basic starting option."
     }
   }
 ]
