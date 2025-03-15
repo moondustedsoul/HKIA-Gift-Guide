@@ -34,23 +34,26 @@
   },
   {
     "item": "|spinip-alfredo-pizza|",
-    "character": ["|badtz-maru|", "|hello-kitty|", "|pochacco|"],
+    "character": ["|badtz-maru|", "|hello-kitty|", "|pochacco|", "|pompompurin|"],
     "value": {
       "|badtz-maru|": 7,
       "|hello-kitty|": 7,
-      "|pochacco|": 7
+      "|pochacco|": 7,
+      "|pompompurin|": 7
     },
     "hearts": {
       "|badtz-maru|": 1,
       "|hello-kitty|": 1,
-      "|pochacco|": 1
+      "|pochacco|": 1,
+      "|pompompurin|": 1
     },
     "source": "|dough| + |spinip| + |coral-milk|",
     "requirements": "|pizza-oven-upgrade|",
     "comments": {
       "|badtz-maru|": "Use only if low on ingredients for |quattro-formaggi-pizza| or |ultimate-joke-pizza|.",
       "|hello-kitty|": "Decent value option with cooking station upgrades.",
-      "|pochacco|": "Highest value with decent material cost."
+      "|pochacco|": "Highest value with decent material cost.",
+      "|pompompurin|": "Okay value for material cost."
     }
   },
   {
@@ -385,20 +388,23 @@
   },
   {
     "item": "|candied-banana-coffee|",
-    "character": ["|cinnamoroll|", "|hello-kitty|"],
+    "character": ["|cinnamoroll|", "|hello-kitty|", "|pompompurin|"],
     "value": {
       "|cinnamoroll|": 7,
-      "|hello-kitty|": 8
+      "|hello-kitty|": 8,
+      "|pompompurin|": 7
     },
     "hearts": {
       "|cinnamoroll|": 1,
-      "|hello-kitty|": 2
+      "|hello-kitty|": 2,
+      "|pompompurin|": 1
     },
     "source": "|candlenut| + |banana| + |candy-cloud|",
     "requirements": "|espresso-machine-upgrade|",
     "comments": {
       "|cinnamoroll|": "Good value for material cost.",
-      "|hello-kitty|": "Great value with a very affordable material cost. Use after obtaining |espresso-machine-upgrade|."
+      "|hello-kitty|": "Great value with a very affordable material cost. Use after obtaining |espresso-machine-upgrade|.",
+      "|pompompurin|": "Good value for material cost after |espresso-machine-upgrade|."
     }
   },
   {
@@ -901,17 +907,20 @@
   },
   {
     "item": "|starry-skies-shake|",
-    "character": ["|my-melody|"],
+    "character": ["|my-melody|", "|pompompurin|"],
     "value": {
-      "|my-melody|": 9
+      "|my-melody|": 9,
+      "|pompompurin|": 9
     },
     "hearts": {
-      "|my-melody|": 1
+      "|my-melody|": 1,
+      "|pompompurin|": 1
     },
     "source": "|cactus-cream| + |snowcicle| + |starfruit|",
     "requirements": "|dessert-machine-upgrade|",
     "comments": {
-        "|my-melody|": "Highest value, but very late-game option. May need to save ingredients for |kiki| or |lala|. The recipe is in a |treasure-chest| on |cloud-island|."
+        "|my-melody|": "Highest value, but very late-game option. May need to save ingredients for |kiki| or |lala|. The recipe is in a |treasure-chest| on |cloud-island|.",
+        "|pompompurin|": "Highest value, but very late-game option. May need to save ingredients for |kiki| or |lala|. The recipe is in a |treasure-chest| on |cloud-island|."
     }
   },
   {
@@ -946,17 +955,20 @@
   },
   {
     "item": "|sweet-cloud|",
-    "character": ["|my-melody|"],
+    "character": ["|my-melody|", "|pompompurin|"],
     "value": {
-      "|my-melody|": 6
+      "|my-melody|": 6,
+      "|pompompurin|": 6
     },
     "hearts": {
-      "|my-melody|": 1
+      "|my-melody|": 1,
+      "|pompompurin|": 1
     },
     "source": "|candy-cloud| + |swampmallow|<br>or<br>|candy-cloud| + |sugarkelp|",
     "requirements": "|candy-cloud-machine|",
     "comments": {
-        "|my-melody|": "Decent value for material cost with |candy-cloud-machine| available."
+        "|my-melody|": "Decent value for material cost with |candy-cloud-machine| available.",
+        "|pompompurin|": "Great value for material cost with |candy-cloud-machine| unlocked."
     }
   },
   {
@@ -1036,32 +1048,38 @@
   },
   {
     "item": "|mamas-pudding|",
-    "character": ["|pekkle|"],
+    "character": ["|pekkle|", "|pompompurin|"],
     "value": {
-      "|pekkle|": 6
+      "|pekkle|": 6,
+      "|pompompurin|": 8
     },
     "hearts": {
-      "|pekkle|": 1
+      "|pekkle|": 1,
+      "|pompompurin|": 3
     },
     "source": "|cactus-cream| + |banana| + |coral-milk|",
     "requirements": "|dessert-machine-upgrade|",
     "comments": {
-        "|pekkle|": "Good value for good material cost with |dessert-machine-upgrade|."
+        "|pekkle|": "Good value for good material cost with |dessert-machine-upgrade|.",
+        "|pompompurin|": "High value and decent material cost. Can obtain 1 per day from |pompompurins-mama| if she is visiting."
     }
   },
   {
     "item": "|stacked-stones|",
-    "character": ["|pekkle|"],
+    "character": ["|pekkle|", "|pompompurin|"],
     "value": {
-      "|pekkle|": 5
+      "|pekkle|": 5,
+      "|pompompurin|": 4
     },
     "hearts": {
-      "|pekkle|": 2
+      "|pekkle|": 2,
+      "|pompompurin|": 1
     },
     "source": "3x |calming-crystal|",
     "requirements": "|crafting-table|",
     "comments": {
-        "|pekkle|": "Early option, but difficult to craft more than 2 daily. |crafting-plans| are in a |treasure-chest| on the beach of |gemstone-mountain|."
+        "|pekkle|": "Early option, but difficult to craft more than 2 daily. |crafting-plans| are in a |treasure-chest| on the beach of |gemstone-mountain|.",
+        "|pompompurin|": "Option before the |dessert-machine| but difficult to craft more than 2 daily."
     }
   },
   {
@@ -1096,17 +1114,20 @@
   },
   {
     "item": "|calming-crystal|",
-    "character": ["|pekkle|"],
+    "character": ["|pekkle|", "|pompompurin|"],
     "value": {
-      "|pekkle|": 3
+      "|pekkle|": 3,
+      "|pompompurin|": 3
     },
     "hearts": {
-      "|pekkle|": 1
+      "|pekkle|": 1,
+      "|pompompurin|": 1
     },
     "source": "|gemstone-mountain|",
     "requirements": "None",
     "comments": {
-        "|pekkle|": "Basic starting option."
+        "|pekkle|": "Basic starting option.",
+        "|pompompurin|": "Basic starting option."
     }
   },
   {
@@ -1272,6 +1293,81 @@
     "requirements": "None",
     "comments": {
         "|pochacco|": "Basic starting option."
+    }
+  },
+  {
+    "item": "|magma-pudding|",
+    "character": ["|pompompurin|"],
+    "value": {
+      "|pompompurin|": 5
+    },
+    "hearts": {
+      "|pompompurin|": 1
+    },
+    "source": "||",
+    "requirements": "||",
+    "comments": {
+        "|pompompurin|": "Good value for material cost before |dessert-machine-upgrade|."
+    }
+  },
+  {
+    "item": "|dessert-pizza|",
+    "character": ["|pompompurin|"],
+    "value": {
+      "|pompompurin|": 5
+    },
+    "hearts": {
+      "|pompompurin|": 1
+    },
+    "source": "||",
+    "requirements": "||",
+    "comments": {
+        "|pompompurin|": "Best starting option."
+    }
+  },
+  {
+    "item": "|pudding|",
+    "character": ["|pompompurin|"],
+    "value": {
+      "|pompompurin|": 5
+    },
+    "hearts": {
+      "|pompompurin|": 2
+    },
+    "source": "||",
+    "requirements": "||",
+    "comments": {
+        "|pompompurin|": "Good value for material cost before |dessert-machine-upgrade|. Can obtain 1 per day from |pompompurins-papa| if he is visiting."
+    }
+  },
+  {
+    "item": "|milk-bread|",
+    "character": ["|pompompurin|"],
+    "value": {
+      "|pompompurin|": 4
+    },
+    "hearts": {
+      "|pompompurin|": 1
+    },
+    "source": "||",
+    "requirements": "||",
+    "comments": {
+        "|pompompurin|": "Option before the |dessert-machine|."
+    }
+  },
+  {
+    "item": "|cappuccino|",
+    "character": ["|pompompurin|"],
+    "value": {
+      "|pompompurin|": 4
+    },
+    "hearts": {
+      "|pompompurin|": 1
+    },
+    "source": "||",
+    "requirements": "||",
+    "comments": {
+        "|pompompurin|": "Option before the |dessert-machine|."
     }
   }
 ]
