@@ -1305,7 +1305,7 @@
     "item": "|purple-latte|",
     "character": ["|pochacco|"],
     "value": {
-      "pochacco||": 4
+      "|pochacco|": 4
     },
     "hearts": {
       "|pochacco|": 1
