@@ -19,17 +19,20 @@
   },
   {
     "item": "|ultimate-joke-pizza|",
-    "character": ["|badtz-maru|"],
+    "character": ["|badtz-maru|", "|tuxedosam|"],
     "value": {
-      "|badtz-maru|": 8
+      "|badtz-maru|": 8,
+      "|tuxedosam|": 6
     },
     "hearts": {
-      "|badtz-maru|": 3
+      "|badtz-maru|": 3,
+      "|tuxedosam|": 1
     },
     "source": "|dough| + |pineapple| + |tofu|",
     "requirements": "|pizza-oven-upgrade|",
     "comments": {
-      "|badtz-maru|": "Great value, but it is possible to run short on |pineapple|s because |tuxedosam|'s 3-heart gift also requires them. Save up in the early game."
+      "|badtz-maru|": "Great value, but it is possible to run short on |pineapple|s because |tuxedosam|'s 3-heart gift also requires them. Save up in the early game.",
+      "|tuxedosam|": "Okay option after |pizza-oven-upgrade|."
     }
   },
   {
@@ -73,20 +76,23 @@
   },
   {
     "item": "|pineapple-lava-soda|",
-    "character": ["|badtz-maru|", "|retsuko|"],
+    "character": ["|badtz-maru|", "|retsuko|", "|tuxedosam|"],
     "value": {
       "|badtz-maru|": 6,
-      "|retsuko|": 6
+      "|retsuko|": 6,
+      "|tuxedosam|": 6
     },
     "hearts": {
       "|badtz-maru|": 1,
-      "|retsuko|": 1
+      "|retsuko|": 1,
+      "|tuxedosam|": 1
     },
     "source": "|fizzy-crystal| + |pineapple| + |magma-bloom|",
     "requirements": "|soda-machine-upgrade|",
     "comments": {
       "|badtz-maru|": "Great option before |pizza-oven-upgrade|.",
-      "|retsuko|": "Good option after |soda-machine-upgrade|."
+      "|retsuko|": "Good option after |soda-machine-upgrade|.",
+      "|tuxedosam|": "Okay option after |soda-machine-upgrade|."
     }
   },
   {
@@ -109,17 +115,20 @@
   },
   {
     "item": "|pineapple-pizza|",
-    "character": ["|badtz-maru|"],
+    "character": ["|badtz-maru|", "|tuxedosam|"],
     "value": {
-      "|badtz-maru|": 5
+      "|badtz-maru|": 5,
+      "|tuxedosam|": 4
     },
     "hearts": {
-      "|badtz-maru|": 2
+      "|badtz-maru|": 2,
+      "|tuxedosam|": 1
     },
     "source": "|dough| + |pineapple|",
     "requirements": "|pizza-oven|",
     "comments": {
-      "|badtz-maru|": "Good option before |pizza-oven-upgrade|."
+      "|badtz-maru|": "Good option before |pizza-oven-upgrade|.",
+      "|tuxedosam|": "Option before cooking station upgrades."
     }
   },
   {
@@ -142,62 +151,74 @@
   },
   {
     "item": "|pineapple-stack-cake|",
-    "character": ["|badtz-maru|"],
+    "character": ["|badtz-maru|", "|tuxedosam|"],
     "value": {
-      "|badtz-maru|": 4
+      "|badtz-maru|": 4,
+      "|tuxedosam|": 4
     },
     "hearts": {
-      "|badtz-maru|": 1
+      "|badtz-maru|": 1,
+      "|tuxedosam|": 1
     },
     "source": "|flour| + |pineapple|",
     "requirements": "|oven|",
     "comments": {
-      "|badtz-maru|": "Good option when starting the game."
+      "|badtz-maru|": "Good option when starting the game.",
+      "|tuxedosam|": "Option before cooking station upgrades."
     }
   },
   {
     "item": "|tropical-tag| |rare-tag| |fish-tag|",
-    "character": ["|badtz-maru|"],
+    "character": ["|badtz-maru|", "|tuxedosam|"],
     "value": {
-      "|badtz-maru|": 4
+      "|badtz-maru|": 4,
+      "|tuxedosam|": 4
     },
     "hearts": {
-      "|badtz-maru|": 1
+      "|badtz-maru|": 1,
+      "|tuxedosam|": 1
     },
     "source": "|fishing|",
     "requirements": "|fishing-rod|",
     "comments": {
-      "|badtz-maru|": "Cheap early option once the |fishing-rod| is unlocked. (As a bonus, clamfish come with nearly-guaranteed |stick|.)"
+      "|badtz-maru|": "Cheap early option once the |fishing-rod| is unlocked. (As a bonus, clamfish come with nearly-guaranteed |stick|.)",
+      "|tuxedosam|": "Cheap early option with |fishing-rod|. (Also, catching any clamfish earns a |stick|.)"
     }
   },
   {
     "item": "|dragondarter|",
-    "character": ["|badtz-maru|"],
+    "character": ["|badtz-maru|", "|tuxedosam|"],
     "value": {
-      "|badtz-maru|": 4
+      "|badtz-maru|": 4,
+      "|tuxedosam|": 4
     },
     "hearts": {
-      "|badtz-maru|": 1
+      "|badtz-maru|": 1,
+      "|tuxedosam|": 1
     },
     "source": "|catching|",
     "requirements": "|net|",
     "comments": {
-      "|badtz-maru|": "Cheap early option once the |net| is unlocked."
+      "|badtz-maru|": "Cheap early option once the |net| is unlocked.",
+      "|tuxedosam|": "Cheap early option with |net|."
     }
   },
   {
     "item": "|coconut|",
-    "character": ["|badtz-maru|"],
+    "character": ["|badtz-maru|", "|tuxedosam|"],
     "value": {
-      "|badtz-maru|": 2
+      "|badtz-maru|": 2,
+      "|tuxedosam|": 2
     },
     "hearts": {
-      "|badtz-maru|": 1
+      "|badtz-maru|": 1,
+      "|tuxedosam|": 1
     },
     "source": "|seaside-resort|",
     "requirements": "None",
     "comments": {
-      "|badtz-maru|": "Basic starting option."
+      "|badtz-maru|": "Basic starting option.",
+      "|tuxedosam|": "Basic starting option."
     }
   },
   {
@@ -391,23 +412,26 @@
   },
   {
     "item": "|candied-banana-coffee|",
-    "character": ["|cinnamoroll|", "|hello-kitty|", "|pompompurin|"],
+    "character": ["|cinnamoroll|", "|hello-kitty|", "|pompompurin|", "|tuxedosam|"],
     "value": {
       "|cinnamoroll|": 7,
       "|hello-kitty|": 8,
-      "|pompompurin|": 7
+      "|pompompurin|": 7,
+      "|tuxedosam|": 7
     },
     "hearts": {
       "|cinnamoroll|": 1,
       "|hello-kitty|": 2,
-      "|pompompurin|": 1
+      "|pompompurin|": 1,
+      "|tuxedosam|": 1
     },
     "source": "|candlenut| + |banana| + |candy-cloud|",
     "requirements": "|espresso-machine-upgrade|",
     "comments": {
       "|cinnamoroll|": "Good value for material cost.",
       "|hello-kitty|": "Great value with a very affordable material cost. Use after obtaining |espresso-machine-upgrade|.",
-      "|pompompurin|": "Good value for material cost after |espresso-machine-upgrade|."
+      "|pompompurin|": "Good value for material cost after |espresso-machine-upgrade|.",
+      "|tuxedosam|": "Great option after |espresso-machine-upgrade|."
     }
   },
   {
@@ -502,17 +526,20 @@
   },
   {
     "item": "|designer-island-doll|",
-    "character": ["|hangyodon|"],
+    "character": ["|hangyodon|", "|tuxedosam|"],
     "value": {
-      "|hangyodon|": 6
+      "|hangyodon|": 6,
+      "|tuxedosam|": 8
     },
     "hearts": {
-      "|hangyodon|": 1
+      "|hangyodon|": 1,
+      "|tuxedosam|": 3
     },
     "source": "5x |sand-dollar| + 2x |fabric| + |gift-box|",
     "requirements": "|crafting-table|",
     "comments": {
-        "|hangyodon|": "High value but high material cost. Unlocked at |my-melody| level 16."
+        "|hangyodon|": "High value but high material cost. Unlocked at |my-melody| level 16.",
+        "|tuxedosam|": "3-heart gift; crafting cost is a little high. Unlocked at |my-melody| level 16."
     }
   },
   {
@@ -592,17 +619,20 @@
   },
   {
     "item": "|the-future-of-everything|",
-    "character": ["|hello-kitty|"],
+    "character": ["|hello-kitty|", "|tuxedosam|"],
     "value": {
-      "|hello-kitty|": 9
+      "|hello-kitty|": 9,
+      "|tuxedosam|": 9
     },
     "hearts": {
-      "|hello-kitty|": 1
+      "|hello-kitty|": 1,
+      "|tuxedosam|": 1
     },
     "source": "3x |star| + 3x |little-challenge| + 3x |glitch|",
     "requirements": "|crafting-table|",
     "comments": {
-        "|hello-kitty|": "Highest value, but requires |star|s from |stardust|. The |crafting-plans| are in a |treasure-chest| on |cloud-island|."
+        "|hello-kitty|": "Highest value, but requires |star|s from |stardust|. The |crafting-plans| are in a |treasure-chest| on |cloud-island|.",
+        "|tuxedosam|": "Highest value, but too late-game and expensive to use. The |crafting-plans| are in a |treasure-chest| in |cloud-island|."
     }
   },
   {
@@ -622,17 +652,20 @@
   },
   {
     "item": "|beignets-with-pineapple-dip|",
-    "character": ["|hello-kitty|"],
+    "character": ["|hello-kitty|", "|tuxedosam|"],
     "value": {
-      "|hello-kitty|": 7
+      "|hello-kitty|": 7,
+      "|tuxedosam|": 7
     },
     "hearts": {
-      "|hello-kitty|": 2
+      "|hello-kitty|": 2,
+      "|tuxedosam|": 2
     },
     "source": "|flour| + |candy-cloud| + |pineapple|",
     "requirements": "|oven-upgrade|",
     "comments": {
-        "|hello-kitty|": "Decent value option with |oven-upgrade|."
+        "|hello-kitty|": "Decent value option with |oven-upgrade|.",
+        "|tuxedosam|": "Good option after |oven-upgrade|."
     }
   },
   {
@@ -1506,6 +1539,36 @@
     "requirements": "None",
     "comments": {
         "|retsuko|": "Basic starting option."
+    }
+  },
+  {
+    "item": "|tropical-gift|",
+    "character": ["|tuxedosam|"],
+    "value": {
+      "|tuxedosam|": 5
+    },
+    "hearts": {
+      "|tuxedosam|": 2
+    },
+    "source": "|gift-box| + 10x |sand-dollar|",
+    "requirements": "|crafting-table|",
+    "comments": {
+        "|tuxedosam|": "An option after cooking station upgrades. The |crafting-plans| are in a |treasure-chest| on the west side of |seaside-resort|."
+    }
+  },
+  {
+    "item": "|tropical-soda|",
+    "character": ["|tuxedosam|"],
+    "value": {
+      "|tuxedosam|": 4
+    },
+    "hearts": {
+      "|tuxedosam|": 1
+    },
+    "source": "|fizzy-crystal| + |pineapple|",
+    "requirements": "|soda-machine|",
+    "comments": {
+        "|tuxedosam|": "Option before cooking station upgrades."
     }
   }
 ]
