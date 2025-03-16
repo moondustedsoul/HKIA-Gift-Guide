@@ -89,6 +89,8 @@
     "tropical-tag": { "name": "Tropical", "img": "images/tags/Tropical_Icon.webp" },
     "rare-tag": { "name": "Rare", "img": "images/tags/Rare_Icon.png" },
     "fish-tag": { "name": "Fish", "img": "images/tags/Fish_Icon.webp" },
+    "aquatic-tag": { "name": "Aquatic", "img": "images/tags/Aquatic_Icon.webp" },
+    "critter-tag": { "name": "Critter", "img": "images/tags/Critter_Icon.webp" },
 
 
 
