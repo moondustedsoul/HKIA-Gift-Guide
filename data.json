@@ -127,7 +127,7 @@
     "source": "|dough| + |pineapple|",
     "requirements": "|pizza-oven|",
     "comments": {
-      "|badtz-maru|": "Good option before |pizza-oven-upgrade|.",
+      "|badtz-maru|": "Best option before |pizza-oven-upgrade|.",
       "|tuxedosam|": "Option before cooking station upgrades."
     }
   },
@@ -163,7 +163,7 @@
     "source": "|flour| + |pineapple|",
     "requirements": "|oven|",
     "comments": {
-      "|badtz-maru|": "Good option when starting the game.",
+      "|badtz-maru|": "Early option, but |flour| may need to be saved for other characters' gifts very early in the game.",
       "|tuxedosam|": "Option before cooking station upgrades."
     }
   },
@@ -374,7 +374,7 @@
     "source": "3x |paper|<br>or<br>3x |lotus-blossom|",
     "requirements": "|crafting-table|",
     "comments": {
-      "|chococat|": "Earliest starting option. |crafting-plans| are unlocked during \"Power Up the Gate\" quest (|chococat| level 1), or in a |treasure-chest| near the |seaside-resort| |crafting-table|."
+      "|chococat|": "Earliest starting option. |crafting-plans| are unlocked during \"Power Up the Gate\" quest (|chococat| level 1), or found in a |treasure-chest| near the |seaside-resort| |crafting-table|."
     }
   },
   {
@@ -391,7 +391,7 @@
     "source": "|candlenut| + |cinna-bloom| + |pumpkin|",
     "requirements": "|espresso-machine-upgrade|",
     "comments": {
-      "|cinnamoroll|": "Good option if low on |chocolate-coin|s.",
+      "|cinnamoroll|": "Highest value and affordable material cost.",
       "|kuromi|": "Highest value with good material cost."
     }
   },
@@ -407,7 +407,7 @@
     "source": "|candlenut| + |snowcicle| + |magma-bloom|",
     "requirements": "|espresso-machine-upgrade|",
     "comments": {
-      "|cinnamoroll|": "Alternative if low on |chocolate-coin|s."
+      "|cinnamoroll|": "Good value for material cost."
     }
   },
   {
@@ -428,7 +428,7 @@
     "source": "|candlenut| + |banana| + |candy-cloud|",
     "requirements": "|espresso-machine-upgrade|",
     "comments": {
-      "|cinnamoroll|": "Good value for material cost.",
+      "|cinnamoroll|": "Option with easy-to-obtain ingredients.",
       "|hello-kitty|": "Great value with a very affordable material cost. Use after obtaining |espresso-machine-upgrade|.",
       "|pompompurin|": "Good value for material cost after |espresso-machine-upgrade|.",
       "|tuxedosam|": "Great option after |espresso-machine-upgrade|."
@@ -521,7 +521,7 @@
     "source": "3x |pineapple| + 5x |seashell| + 2x |fabric|",
     "requirements": "|crafting-table|",
     "comments": {
-        "|hangyodon|": "High value but high material cost. Unlocked at |my-melody| level 13."
+        "|hangyodon|": "Highest value but expensive. |pineapple|s may need to be saved for Best Friend gifts. Unlocked at |my-melody| level 13."
     }
   },
   {
@@ -584,7 +584,7 @@
     "source": "3x |feather| + 5x |seashell| + 2x |fabric|",
     "requirements": "|crafting-table|",
     "comments": {
-        "|hangyodon|": "Good value but higher material cost. The |crafting-plans| are in a |treasure-chest| above the Sunken Ship fast-travel point."
+        "|hangyodon|": "A more expensive starting option, but an option if |fishing| is not an option. The |crafting-plans| are in a |treasure-chest| above the Sunken Ship fast-travel point."
     }
   },
   {
@@ -614,7 +614,7 @@
     "source": "|rainbow-reef|",
     "requirements": "|snorkel|",
     "comments": {
-        "|hangyodon|": "Basic starting option for non-fishers."
+        "|hangyodon|": "Basic starting option if |fishing| is not an option."
     }
   },
   {
@@ -631,7 +631,7 @@
     "source": "3x |star| + 3x |little-challenge| + 3x |glitch|",
     "requirements": "|crafting-table|",
     "comments": {
-        "|hello-kitty|": "Highest value, but requires |star|s from |stardust|. The |crafting-plans| are in a |treasure-chest| on |cloud-island|.",
+        "|hello-kitty|": "Highest value, but late-game and expensive. The |crafting-plans| are in a |treasure-chest| on |cloud-island|.",
         "|tuxedosam|": "Highest value, but too late-game and expensive to use. The |crafting-plans| are in a |treasure-chest| in |cloud-island|."
     }
   },
@@ -664,7 +664,7 @@
     "source": "|flour| + |candy-cloud| + |pineapple|",
     "requirements": "|oven-upgrade|",
     "comments": {
-        "|hello-kitty|": "Decent value option with |oven-upgrade|.",
+        "|hello-kitty|": "Decent value option with |oven-upgrade|, but |pineapples| may be better saved for other characters' gifts.",
         "|tuxedosam|": "Good option after |oven-upgrade|."
     }
   },
@@ -680,7 +680,7 @@
     "source": "|flour| + |apple|",
     "requirements": "|oven|",
     "comments": {
-        "|hello-kitty|": "Good option without |oven-upgrade|. Can obtain 1 per day each from |dear-daniel| or |mimmy| if they are visiting."
+        "|hello-kitty|": "Early option without cooking station upgrades. Can obtain 1 per day each from |dear-daniel| and |mimmy| if they are visiting."
     }
   },
   {
@@ -713,7 +713,7 @@
     "source": "|seaside-resort|",
     "requirements": "None",
     "comments": {
-        "|hello-kitty|": "Basic starting option."
+        "|hello-kitty|": "Basic starting option if out of |flour|."
     }
   },
   {
@@ -756,7 +756,7 @@
       "|keroppi|": 1
     },
     "source": "|catching|",
-    "requirements": "None",
+    "requirements": "|net|",
     "comments": {
         "|keroppi|": "Cheap option but somewhat late-game."
     }
@@ -833,7 +833,7 @@
     "source": "7x |coconut|<br>or<br>5x |stick|",
     "requirements": "|crafting-table|",
     "comments": {
-        "|keroppi|": "High cost for value, but a starting option. Unlocked at |keroppi| level 4."
+        "|keroppi|": "High cost for value, but an option without the |net| or |fishing-rod|. Unlocked at |keroppi| level 4."
     }
   },
   {
@@ -923,7 +923,7 @@
     "source": "|cactus-cream| + |pumpkin|",
     "requirements": "|dessert-machine|",
     "comments": {
-        "|kuromi|": "Good option for early-game."
+        "|kuromi|": "Somewhat early option."
     }
   },
   {
@@ -938,7 +938,7 @@
     "source": "|spooky-swamp|",
     "requirements": "None",
     "comments": {
-        "|kuromi|": "Basic starting option."
+        "|kuromi|": "Basic starting option, but try to cook or craft instead."
     }
   },
   {
@@ -1034,7 +1034,7 @@
     "source": "|candlenut| + |strawberry|<br>or<br>|candlenut| + |sakura|",
     "requirements": "|espresso-machine|",
     "comments": {
-        "|my-melody|": "Best early option after getting the |snorkel|. (Use |strawberry|.)"
+        "|my-melody|": "Best early option after getting the |snorkel| and before the |dessert-machine-upgrade| and |oven-upgrade|. (Use |strawberry|.)"
     }
   },
   {
@@ -1064,7 +1064,7 @@
     "source": "|mechanism| + 5x |feather| + 5x |shiny|",
     "requirements": "|crafting-table|",
     "comments": {
-        "|pekkle|": "Highest value and decent material cost. Unlocked at |retsuko| level 8."
+        "|pekkle|": "Highest value and decent material cost unless low on |mechanism|s. Unlocked at |retsuko| level 8."
     }
   },
   {
@@ -1079,7 +1079,7 @@
     "source": "|mechanism| + 5x |shiny| + |ingot|",
     "requirements": "|crafting-table|",
     "comments": {
-        "|pekkle|": "High value but uses an |ingot|, which may need to be saved for other uses. The |crafting-plans| can be found when breaking a boulder near the Oasis waterfall with a |pickaxe|, or completing the Gem Match and Crane Craze mini-games."
+        "|pekkle|": "High value but uses an |ingot|, which may need to be saved for other uses. It can be won in |gem-match|. The |crafting-plans| can be found when breaking a boulder near the Oasis waterfall with a |pickaxe|."
     }
   },
   {
@@ -1566,6 +1566,21 @@
       "|tuxedosam|": 1
     },
     "source": "|fizzy-crystal| + |pineapple|",
+    "requirements": "|soda-machine|",
+    "comments": {
+        "|tuxedosam|": "Option before cooking station upgrades."
+    }
+  },
+  {
+    "item": "|banana-soda|",
+    "character": ["|tuxedosam|"],
+    "value": {
+      "|tuxedosam|": 4
+    },
+    "hearts": {
+      "|tuxedosam|": 1
+    },
+    "source": "|fizzy-crystal| + |banana|",
     "requirements": "|soda-machine|",
     "comments": {
         "|tuxedosam|": "Option before cooking station upgrades."
