@@ -48,6 +48,7 @@
     "creation-station": { "name": "Creation Station", "img": "images/requirements/Creation_Station_Icon.png"},
     "fishing-rod": { "name": "Fishing Rod", "img": "images/requirements/Fishing_Rod_Icon.png" },
     "net": { "name": "Net", "img": "images/requirements/Net.png" },
+    "bubble-wand": { "name": "Bubble Wand", "img": "images/requirements/Bubble_Wand.png" },
     
 
 
@@ -82,6 +83,10 @@
     "spiced-cloud": { "name": "Spiced Cloud", "img": "images/craftables/Spiced_Cloud.png" },
     "cinnamon-bread": { "name": "Cinnamon Bread", "img": "images/craftables/Cinnamon_Bread.png" },
     "mocha": { "name": "Mocha", "img": "images/craftables/Mocha.png" },
+    "aquatic-music-box": { "name": "Aquatic Music Box", "img": "images/craftables/Aquatic_Music_Box.png" },
+    "designer-island-doll": { "name": "Designer Island Doll", "img": "images/craftables/Designer_Island_Doll.png" },
+    "mermaid-figure": { "name": "Mermaid Figure", "img": "images/craftables/Mermaid_Figure.png" },
+    "aquatic-material": { "name": "Aquatic Material", "img": "images/craftables/Aquatic_Material.png" },
 
 
 
@@ -113,6 +118,7 @@
     "rubber": { "name": "Rubber", "img": "images/sources/Rubber.png" },
     "fishing": { "name": "Fishing", "img": "images/requirements/Fishing_Rod_Icon.png" },
     "catching": { "name": "Catching", "img": "images/requirements/Net.png" },
+    "catching-wand": { "name": "Catching", "img": "images/requirements/Bubble_Wand.png" },
     "coconut": { "name": "Coconut", "img": "images/sources/Coconut.png" },
     "chocolate-coin": { "name": "Chocolate Coin", "img": "images/sources/Chocolate_Coin.png" },
     "glitch": { "name": "Glitch", "img": "images/sources/Glitch.png" },
@@ -132,6 +138,11 @@
     "snowcicle": { "name": "Snowcicle", "img": "images/sources/Snowcicle.png" },
     "banana": { "name": "Banana", "img": "images/sources/Banana.png" },
     "candy-cloud": { "name": "Candy Cloud", "img": "images/sources/Candy_Cloud.png" },
+    "seashell": { "name": "Seashell", "img": "images/sources/Seashell.png" },
+    "sand-dollar": { "name": "Sand Dollar", "img": "images/sources/Sand_Dollar.png" },
+    "fabric": { "name": "Fabric", "img": "images/sources/Fabric.png" },
+    "gift-box": { "name": "Gift Box", "img": "images/sources/Gift_Box.png" },
+    "feather": { "name": "Feather", "img": "images/sources/Feather.png" },
 
 
 
