@@ -588,7 +588,7 @@
     }
   },
   {
-    "item": "|aquatic-tag| |rare-tag| |critter-tag|",
+    "item": "|aquatic-tag| |rare-tag| |critter-tag|s",
     "character": ["|hangyodon|"],
     "value": {
       "|hangyodon|": 4
