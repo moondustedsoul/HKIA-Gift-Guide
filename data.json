@@ -459,7 +459,7 @@
       "|cinnamoroll|": 2
     },
     "source": "|candy-cloud| + |magma-bloom|<br>or<br>|candy-cloud| + |cinna-bloom|",
-    "requirements": "|candy-cloud-machine-upgrade|",
+    "requirements": "|candy-cloud-machine|",
     "comments": {
       "|cinnamoroll|": "Good value but late-game access."
     }
@@ -1001,10 +1001,10 @@
       "|pompompurin|": 1
     },
     "source": "|candy-cloud| + |swampmallow|<br>or<br>|candy-cloud| + |sugarkelp|",
-    "requirements": "|candy-cloud-machine-upgrade|",
+    "requirements": "|candy-cloud-machine|",
     "comments": {
-        "|my-melody|": "Decent value for material cost with |candy-cloud-machine-upgrade|.",
-        "|pompompurin|": "Great value for material cost with |candy-cloud-machine-upgrade|."
+        "|my-melody|": "Decent value for material cost with |candy-cloud-machine|.",
+        "|pompompurin|": "Great value for material cost with |candy-cloud-machine|."
     }
   },
   {
@@ -1017,9 +1017,9 @@
       "|my-melody|": 2
     },
     "source": "|candy-cloud| + |strawberry|<br>or<br>|candy-cloud| + |sakura|",
-    "requirements": "|candy-cloud-machine-upgrade|",
+    "requirements": "|candy-cloud-machine|",
     "comments": {
-        "|my-melody|": "Decent value for material cost with |candy-cloud-machine-upgrade|."
+        "|my-melody|": "Decent value for material cost with |candy-cloud-machine|."
     }
   },
   {
